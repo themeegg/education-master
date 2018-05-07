@@ -3,7 +3,7 @@
 Contributors:       ThemeEgg
 Requires at least:  WordPress 4.0
 Tested up to:       WordPress 4.9.5
-Version:            1.0.3
+Version:            1.0.4
 License:            GPLv3 or later
 License URI:        http://www.gnu.org/licenses/gpl-3.0.html
 Tags:               one-column, two-columns, three-columns, left-sidebar, right-sidebar, custom-background, custom-menu, featured-images, full-width-template, translation-ready, theme-options, threaded-comments, footer-widgets, custom-logo, education
@@ -57,6 +57,10 @@ Other Images:
 2. You wll find different options in customizer
 
 == Changelog ==
+= 1.0.4 - 2018/05/07 =
+    * tgmpa added
+    * minor design issue fixed
+    * demo importer feature 
 = 1.0.3 - 2018/05/04 =
     * Customizer color issue fixed
     * theme check issue fixed
