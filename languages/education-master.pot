@@ -1,0 +1,969 @@
+# Copyright (C) 2018 
+# This file is distributed under the same license as the  package.
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"Report-Msgid-Bugs-To: themeeggofficial@gmail.com\n"
+"POT-Creation-Date: 2018-05-04 10:29:43+00:00\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"PO-Revision-Date: 2018-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
+"X-Generator: grunt-wp-i18n1.0.1\n"
+
+#: 404.php:21
+msgid "404"
+msgstr ""
+
+#: 404.php:19
+msgid "Oops! That page can&rsquo;t be found."
+msgstr ""
+
+#: 404.php:21
+msgid "error"
+msgstr ""
+
+#: 404.php:23
+msgid ""
+"It looks like nothing was found at this location. Maybe try one of the "
+"links below or a search?"
+msgstr ""
+
+#: comments.php:36
+#. translators: 1: title.
+msgid "One thought on &ldquo;%1$s&rdquo;"
+msgstr ""
+
+#: comments.php:52 comments.php:73
+msgid "Comment navigation"
+msgstr ""
+
+#: comments.php:55 comments.php:76
+msgid "Older Comments"
+msgstr ""
+
+#: comments.php:56 comments.php:77
+msgid "Newer Comments"
+msgstr ""
+
+#: comments.php:90
+msgid "Comments are closed."
+msgstr ""
+
+#: core/edm-customizer/parts/customizer-default.php:37
+msgid "Copyright &copy; All rights reserved."
+msgstr ""
+
+#: core/edm-customizer/parts/customizer-default.php:41
+msgid "Blog"
+msgstr ""
+
+#: core/edm-customizer/parts/customizer-default.php:43
+#: core/edm-customizer/parts/customizer-default.php:62
+msgid "Read More"
+msgstr ""
+
+#: core/edm-customizer/parts/edm-additional-panel.php:25
+msgid "Additional Settings"
+msgstr ""
+
+#: core/edm-customizer/parts/edm-additional-panel.php:38
+#: core/edm-customizer/parts/edm-header-panel.php:118
+msgid "Social Icons"
+msgstr ""
+
+#: core/edm-customizer/parts/edm-additional-panel.php:65
+msgid "Social Media Icons"
+msgstr ""
+
+#: core/edm-customizer/parts/edm-additional-panel.php:69
+msgid "Social Media Icon"
+msgstr ""
+
+#: core/edm-customizer/parts/edm-additional-panel.php:70
+msgid "Add Icon"
+msgstr ""
+
+#: core/edm-customizer/parts/edm-additional-panel.php:75
+msgid "Social Media Logo"
+msgstr ""
+
+#: core/edm-customizer/parts/edm-additional-panel.php:76
+msgid "Choose social media icon."
+msgstr ""
+
+#: core/edm-customizer/parts/edm-additional-panel.php:80
+msgid "Social Icon Url"
+msgstr ""
+
+#: core/edm-customizer/parts/edm-additional-panel.php:81
+msgid "Enter social media url."
+msgstr ""
+
+#: core/edm-customizer/parts/edm-additional-panel.php:95
+msgid "Widget Settings"
+msgstr ""
+
+#: core/edm-customizer/parts/edm-additional-panel.php:118
+msgid "Category Link"
+msgstr ""
+
+#: core/edm-customizer/parts/edm-additional-panel.php:119
+msgid ""
+"Enable/Disable option for category link for widget title in block layout "
+"widget."
+msgstr ""
+
+#: core/edm-customizer/parts/edm-additional-panel.php:122
+#: core/edm-customizer/parts/edm-additional-panel.php:151
+#: core/edm-customizer/parts/edm-header-panel.php:163
+msgid "Enable"
+msgstr ""
+
+#: core/edm-customizer/parts/edm-additional-panel.php:123
+#: core/edm-customizer/parts/edm-additional-panel.php:152
+#: core/edm-customizer/parts/edm-header-panel.php:164
+msgid "Disable"
+msgstr ""
+
+#: core/edm-customizer/parts/edm-additional-panel.php:147
+msgid "Category Color"
+msgstr ""
+
+#: core/edm-customizer/parts/edm-additional-panel.php:148
+msgid ""
+"Enable/Disable option for category color for widget title in block layout "
+"widget."
+msgstr ""
+
+#: core/edm-customizer/parts/edm-custom-classes.php:23
+msgid "&mdash; Select Category &mdash;"
+msgstr ""
+
+#: core/edm-customizer/parts/edm-custom-classes.php:290
+msgid "Delete"
+msgstr ""
+
+#: core/edm-customizer/parts/edm-custom-classes.php:291
+msgid "Close"
+msgstr ""
+
+#: core/edm-customizer/parts/edm-customizer-sanitize.php:48
+#: core/edm-customizer/parts/edm-general-panel.php:119
+msgid "Full Width Style"
+msgstr ""
+
+#: core/edm-customizer/parts/edm-customizer-sanitize.php:49
+#: core/edm-customizer/parts/edm-general-panel.php:120
+msgid "Box Style"
+msgstr ""
+
+#: core/edm-customizer/parts/edm-customizer-sanitize.php:65
+#: core/edm-customizer/parts/edm-design-panel.php:289
+#: core/edm-customizer/parts/edm-footer-panel.php:65
+#: core/edm-customizer/parts/edm-header-panel.php:64
+#: core/edm-customizer/parts/edm-header-panel.php:93
+#: core/edm-customizer/parts/edm-header-panel.php:122
+#: core/edm-customizer/parts/edm-header-panel.php:191
+#: core/edm-customizer/parts/edm-header-panel.php:247
+msgid "Show"
+msgstr ""
+
+#: core/edm-customizer/parts/edm-customizer-sanitize.php:66
+#: core/edm-customizer/parts/edm-design-panel.php:290
+#: core/edm-customizer/parts/edm-footer-panel.php:66
+#: core/edm-customizer/parts/edm-header-panel.php:65
+#: core/edm-customizer/parts/edm-header-panel.php:94
+#: core/edm-customizer/parts/edm-header-panel.php:123
+#: core/edm-customizer/parts/edm-header-panel.php:192
+#: core/edm-customizer/parts/edm-header-panel.php:248
+msgid "Hide"
+msgstr ""
+
+#: core/edm-customizer/parts/edm-customizer-services.php:13
+msgid "Services"
+msgstr ""
+
+#: core/edm-customizer/parts/edm-customizer-services.php:22
+msgid "Services Settings"
+msgstr ""
+
+#: core/edm-customizer/parts/edm-customizer-services.php:44
+msgid "Service"
+msgstr ""
+
+#: core/edm-customizer/parts/edm-customizer-services.php:62
+#: core/edm-customizer/parts/edm-customizer-slider.php:118
+msgid "Select Page"
+msgstr ""
+
+#: core/edm-customizer/parts/edm-customizer-services.php:81
+msgid "Background Color"
+msgstr ""
+
+#: core/edm-customizer/parts/edm-customizer-services.php:99
+msgid "Service ICON (font awesome icon)"
+msgstr ""
+
+#: core/edm-customizer/parts/edm-customizer-slider.php:13
+msgid "Feature Slider"
+msgstr ""
+
+#: core/edm-customizer/parts/edm-customizer-slider.php:22
+msgid "Slider Type"
+msgstr ""
+
+#: core/edm-customizer/parts/edm-customizer-slider.php:39
+msgid "Enable Slider On"
+msgstr ""
+
+#: core/edm-customizer/parts/edm-customizer-slider.php:56
+msgid "Select Slider Type"
+msgstr ""
+
+#: core/edm-customizer/parts/edm-customizer-slider.php:76
+msgid "No of Slides"
+msgstr ""
+
+#: core/edm-customizer/parts/edm-customizer-slider.php:77
+msgid ""
+"Enter number between 1 and 10. Save and refresh the page if No of Slides is "
+"changed."
+msgstr ""
+
+#: core/edm-customizer/parts/edm-customizer-slider.php:100
+msgid "Slide"
+msgstr ""
+
+#: core/edm-customizer/parts/edm-customizer-slider.php:135
+#: core/edm-customizer/parts/edm-customizer-slider.php:255
+msgid "Caption Alignment"
+msgstr ""
+
+#: core/edm-customizer/parts/edm-customizer-slider.php:156
+#: core/edm-customizer/parts/edm-design-panel.php:140
+msgid "Read More Text"
+msgstr ""
+
+#: core/edm-customizer/parts/edm-customizer-slider.php:167
+msgid "Slider Options"
+msgstr ""
+
+#: core/edm-customizer/parts/edm-customizer-slider.php:184
+msgid "Transition Effect"
+msgstr ""
+
+#: core/edm-customizer/parts/edm-customizer-slider.php:202
+msgid "Transition Delay"
+msgstr ""
+
+#: core/edm-customizer/parts/edm-customizer-slider.php:203
+#: core/edm-customizer/parts/edm-customizer-slider.php:221
+msgid "in seconds"
+msgstr ""
+
+#: core/edm-customizer/parts/edm-customizer-slider.php:220
+msgid "Transition Duration"
+msgstr ""
+
+#: core/edm-customizer/parts/edm-customizer-slider.php:238
+msgid "Enable Caption"
+msgstr ""
+
+#: core/edm-customizer/parts/edm-customizer-slider.php:274
+msgid "Enable Arrow"
+msgstr ""
+
+#: core/edm-customizer/parts/edm-customizer-slider.php:291
+msgid "Enable Autoplay"
+msgstr ""
+
+#: core/edm-customizer/parts/edm-customizer-slider.php:308
+msgid "Enable Overlay"
+msgstr ""
+
+#: core/edm-customizer/parts/edm-design-panel.php:28
+msgid "Design Settings"
+msgstr ""
+
+#: core/edm-customizer/parts/edm-design-panel.php:41
+msgid "Archive Settings"
+msgstr ""
+
+#: core/edm-customizer/parts/edm-design-panel.php:63
+msgid "Archive Sidebars"
+msgstr ""
+
+#: core/edm-customizer/parts/edm-design-panel.php:64
+#: core/edm-customizer/parts/edm-design-panel.php:186
+#: core/edm-customizer/parts/edm-design-panel.php:243
+msgid "Choose sidebar from available layouts"
+msgstr ""
+
+#: core/edm-customizer/parts/edm-design-panel.php:68
+#: core/edm-customizer/parts/edm-design-panel.php:190
+#: core/edm-customizer/parts/edm-design-panel.php:247
+#: core/edm-widgets/edm-widget-functions.php:39
+msgid "Left Sidebar"
+msgstr ""
+
+#: core/edm-customizer/parts/edm-design-panel.php:72
+#: core/edm-customizer/parts/edm-design-panel.php:194
+#: core/edm-customizer/parts/edm-design-panel.php:251
+msgid "Right Sidebar"
+msgstr ""
+
+#: core/edm-customizer/parts/edm-design-panel.php:76
+#: core/edm-customizer/parts/edm-design-panel.php:198
+#: core/edm-customizer/parts/edm-design-panel.php:255
+msgid "No Sidebar"
+msgstr ""
+
+#: core/edm-customizer/parts/edm-design-panel.php:80
+#: core/edm-customizer/parts/edm-design-panel.php:202
+#: core/edm-customizer/parts/edm-design-panel.php:259
+msgid "No Sidebar Center"
+msgstr ""
+
+#: core/edm-customizer/parts/edm-design-panel.php:105
+msgid "Archive Layouts"
+msgstr ""
+
+#: core/edm-customizer/parts/edm-design-panel.php:106
+#: core/edm-customizer/parts/edm-footer-panel.php:90
+msgid "Choose layout from available layouts"
+msgstr ""
+
+#: core/edm-customizer/parts/edm-design-panel.php:110
+msgid "Classic"
+msgstr ""
+
+#: core/edm-customizer/parts/edm-design-panel.php:114
+msgid "Grid"
+msgstr ""
+
+#: core/edm-customizer/parts/edm-design-panel.php:131
+#: layouts/archive/classic.php:41 layouts/archive/grid.php:55
+msgid "Continue Reading"
+msgstr ""
+
+#: core/edm-customizer/parts/edm-design-panel.php:141
+msgid "Enter read more button text for archive page."
+msgstr ""
+
+#: core/edm-customizer/parts/edm-design-panel.php:163
+msgid "Page Settings"
+msgstr ""
+
+#: core/edm-customizer/parts/edm-design-panel.php:185
+msgid "Page Sidebars"
+msgstr ""
+
+#: core/edm-customizer/parts/edm-design-panel.php:220
+msgid "Post Settings"
+msgstr ""
+
+#: core/edm-customizer/parts/edm-design-panel.php:242
+msgid "Post Sidebars"
+msgstr ""
+
+#: core/edm-customizer/parts/edm-design-panel.php:285
+msgid "Related Post Option"
+msgstr ""
+
+#: core/edm-customizer/parts/edm-design-panel.php:286
+msgid "Show/Hide option for related posts section at single post page."
+msgstr ""
+
+#: core/edm-customizer/parts/edm-design-panel.php:305
+#: core/edm-hooks/edm-custom-hooks.php:33
+msgid "Related Posts"
+msgstr ""
+
+#: core/edm-customizer/parts/edm-design-panel.php:314
+msgid "Related Post Section Title"
+msgstr ""
+
+#: core/edm-customizer/parts/edm-footer-panel.php:25
+msgid "Footer Settings"
+msgstr ""
+
+#: core/edm-customizer/parts/edm-footer-panel.php:38
+msgid "Widget Area"
+msgstr ""
+
+#: core/edm-customizer/parts/edm-footer-panel.php:61
+msgid "Footer Widget Section"
+msgstr ""
+
+#: core/edm-customizer/parts/edm-footer-panel.php:62
+msgid "Show/Hide option for footer widget area section."
+msgstr ""
+
+#: core/edm-customizer/parts/edm-footer-panel.php:89
+msgid "Footer Widget Layout"
+msgstr ""
+
+#: core/edm-customizer/parts/edm-footer-panel.php:94
+msgid "Columns Four"
+msgstr ""
+
+#: core/edm-customizer/parts/edm-footer-panel.php:98
+msgid "Columns Three"
+msgstr ""
+
+#: core/edm-customizer/parts/edm-footer-panel.php:102
+msgid "Columns Two"
+msgstr ""
+
+#: core/edm-customizer/parts/edm-footer-panel.php:106
+msgid "Column One"
+msgstr ""
+
+#: core/edm-customizer/parts/edm-footer-panel.php:124
+msgid "Bottom Section"
+msgstr ""
+
+#: core/edm-customizer/parts/edm-footer-panel.php:138
+#: core/edm-hooks/edm-footer-hooks.php:59
+msgid "Education Master"
+msgstr ""
+
+#: core/edm-customizer/parts/edm-footer-panel.php:147
+msgid "Copyright Text"
+msgstr ""
+
+#: core/edm-customizer/parts/edm-general-panel.php:34
+msgid "General Settings"
+msgstr ""
+
+#: core/edm-customizer/parts/edm-general-panel.php:55
+msgid "Theme Color"
+msgstr ""
+
+#: core/edm-customizer/parts/edm-general-panel.php:81
+msgid "Header Text Color"
+msgstr ""
+
+#: core/edm-customizer/parts/edm-general-panel.php:97
+msgid "Website Layout"
+msgstr ""
+
+#: core/edm-customizer/parts/edm-general-panel.php:98
+msgid "Choose a site to display your website more effectively."
+msgstr ""
+
+#: core/edm-customizer/parts/edm-general-panel.php:116
+msgid "Site Layout"
+msgstr ""
+
+#: core/edm-customizer/parts/edm-general-panel.php:140
+msgid "Display Site Title and Tagline"
+msgstr ""
+
+#: core/edm-customizer/parts/edm-header-panel.php:25
+msgid "Header Settings"
+msgstr ""
+
+#: core/edm-customizer/parts/edm-header-panel.php:37
+#: core/edm-customizer/parts/edm-header-panel.php:60
+msgid "Top Header Section"
+msgstr ""
+
+#: core/edm-customizer/parts/edm-header-panel.php:61
+msgid "Show/Hide option for top header section."
+msgstr ""
+
+#: core/edm-customizer/parts/edm-header-panel.php:89
+msgid "Current Date"
+msgstr ""
+
+#: core/edm-customizer/parts/edm-header-panel.php:90
+msgid "Show/Hide option for current date at top header section."
+msgstr ""
+
+#: core/edm-customizer/parts/edm-header-panel.php:119
+msgid "Show/Hide option for social media icons at top header section."
+msgstr ""
+
+#: core/edm-customizer/parts/edm-header-panel.php:136
+msgid "Header Option"
+msgstr ""
+
+#: core/edm-customizer/parts/edm-header-panel.php:159
+msgid "Sticky Menu"
+msgstr ""
+
+#: core/edm-customizer/parts/edm-header-panel.php:160
+msgid "Enable/Disable option for sticky menu."
+msgstr ""
+
+#: core/edm-customizer/parts/edm-header-panel.php:187
+msgid "Search Icon"
+msgstr ""
+
+#: core/edm-customizer/parts/edm-header-panel.php:188
+msgid "Show/Hide option for search icon at primary menu."
+msgstr ""
+
+#: core/edm-customizer/parts/edm-header-panel.php:210
+msgid "Header design style"
+msgstr ""
+
+#: core/edm-customizer/parts/edm-header-panel.php:211
+msgid "Change design of header syle (ie. center logo etc)"
+msgstr ""
+
+#: core/edm-customizer/parts/edm-header-panel.php:225
+msgid "Notice Section"
+msgstr ""
+
+#: core/edm-customizer/parts/edm-header-panel.php:243
+msgid "Notice Option"
+msgstr ""
+
+#: core/edm-customizer/parts/edm-header-panel.php:244
+msgid "Hide/show notice board section."
+msgstr ""
+
+#: core/edm-customizer/parts/edm-header-panel.php:263
+#: core/edm-hooks/edm-header-hooks.php:275
+msgid "Notices"
+msgstr ""
+
+#: core/edm-customizer/parts/edm-header-panel.php:272
+msgid "Notice Caption"
+msgstr ""
+
+#: core/edm-functions/options.php:90
+msgid "Home Page"
+msgstr ""
+
+#: core/edm-functions/options.php:91
+msgid "Disabled"
+msgstr ""
+
+#: core/edm-functions/options.php:116
+msgid "Featured Pages"
+msgstr ""
+
+#: core/edm-functions/options.php:168
+msgid "Default (No header Banner style)"
+msgstr ""
+
+#: core/edm-functions/options.php:169
+msgid "Center Align"
+msgstr ""
+
+#: core/edm-functions/options.php:170
+msgid "Left Align"
+msgstr ""
+
+#: core/edm-hooks/edm-footer-hooks.php:67
+#. translators: 1: Theme name, 2: Theme author.
+msgid "Theme: %1$s by %2$s."
+msgstr ""
+
+#: core/edm-metaboxes/edm-page-metabox.php:16
+msgid "Page Meta Options"
+msgstr ""
+
+#: core/edm-metaboxes/edm-page-metabox.php:29
+#: core/edm-metaboxes/edm-post-metabox.php:29
+msgid "Default Sidebar"
+msgstr ""
+
+#: core/edm-metaboxes/edm-page-metabox.php:35
+#: core/edm-metaboxes/edm-post-metabox.php:35
+msgid "Left sidebar"
+msgstr ""
+
+#: core/edm-metaboxes/edm-page-metabox.php:41
+#: core/edm-metaboxes/edm-post-metabox.php:41
+msgid "Right sidebar"
+msgstr ""
+
+#: core/edm-metaboxes/edm-page-metabox.php:47
+#: core/edm-metaboxes/edm-post-metabox.php:47
+msgid "No sidebar Full width"
+msgstr ""
+
+#: core/edm-metaboxes/edm-page-metabox.php:53
+#: core/edm-metaboxes/edm-post-metabox.php:53
+msgid "No sidebar Content Centered"
+msgstr ""
+
+#: core/edm-metaboxes/edm-page-metabox.php:72
+#: core/edm-metaboxes/edm-post-metabox.php:72
+msgid "Information"
+msgstr ""
+
+#: core/edm-metaboxes/edm-page-metabox.php:73
+#: core/edm-metaboxes/edm-post-metabox.php:73
+msgid "Sidebars"
+msgstr ""
+
+#: core/edm-metaboxes/edm-page-metabox.php:80
+#: core/edm-metaboxes/edm-post-metabox.php:80
+msgid "About Metabox Options"
+msgstr ""
+
+#: core/edm-metaboxes/edm-page-metabox.php:82
+#: core/edm-metaboxes/edm-post-metabox.php:82
+msgid ""
+"In this section we have lots of features which make your post unique and "
+"completely different."
+msgstr ""
+
+#: core/edm-metaboxes/edm-page-metabox.php:88
+#: core/edm-metaboxes/edm-post-metabox.php:88
+msgid "Available Sidebars"
+msgstr ""
+
+#: core/edm-metaboxes/edm-page-metabox.php:89
+#: core/edm-metaboxes/edm-post-metabox.php:89
+msgid ""
+"Select sidebar from available options which replaced sidebar layout from "
+"customizer settings."
+msgstr ""
+
+#: core/edm-metaboxes/edm-post-metabox.php:16
+msgid "Post Meta Options"
+msgstr ""
+
+#: core/edm-widgets/edm-block-posts.php:26
+msgid "Displays block posts from selected category in different layouts."
+msgstr ""
+
+#: core/edm-widgets/edm-block-posts.php:28
+msgid "Block Posts"
+msgstr ""
+
+#: core/edm-widgets/edm-block-posts.php:43 core/edm-widgets/edm-carousel.php:43
+#: core/edm-widgets/edm-featured-posts.php:43
+msgid "Block title"
+msgstr ""
+
+#: core/edm-widgets/edm-block-posts.php:44 core/edm-widgets/edm-carousel.php:44
+#: core/edm-widgets/edm-featured-posts.php:44
+msgid "Enter your block title. (Optional - Leave blank to hide title.)"
+msgstr ""
+
+#: core/edm-widgets/edm-block-posts.php:50
+msgid "Block Category"
+msgstr ""
+
+#: core/edm-widgets/edm-carousel.php:26
+msgid "Displays posts from selected categories in carousel layouts."
+msgstr ""
+
+#: core/edm-widgets/edm-carousel.php:28
+msgid "Carousel"
+msgstr ""
+
+#: core/edm-widgets/edm-carousel.php:50
+#: core/edm-widgets/edm-featured-posts.php:50
+msgid "Block Categories"
+msgstr ""
+
+#: core/edm-widgets/edm-cta.php:26
+msgid "Call to action widget"
+msgstr ""
+
+#: core/edm-widgets/edm-cta.php:28
+msgid "CTA"
+msgstr ""
+
+#: core/edm-widgets/edm-cta.php:41
+msgid "Title"
+msgstr ""
+
+#: core/edm-widgets/edm-cta.php:47
+msgid "CTA Heading"
+msgstr ""
+
+#: core/edm-widgets/edm-cta.php:53
+msgid "Select background image"
+msgstr ""
+
+#: core/edm-widgets/edm-cta.php:58
+msgid "Enable parallax"
+msgstr ""
+
+#: core/edm-widgets/edm-cta.php:63
+msgid "Description"
+msgstr ""
+
+#: core/edm-widgets/edm-cta.php:68
+msgid "Button Link"
+msgstr ""
+
+#: core/edm-widgets/edm-cta.php:73
+msgid "Button Text"
+msgstr ""
+
+#: core/edm-widgets/edm-cta.php:79
+msgid "Open in new tab"
+msgstr ""
+
+#: core/edm-widgets/edm-default-tabbed.php:26
+msgid "A widget shows recent posts and comment in tabbed layout."
+msgstr ""
+
+#: core/edm-widgets/edm-default-tabbed.php:28
+msgid "Default Tabbed"
+msgstr ""
+
+#: core/edm-widgets/edm-default-tabbed.php:41
+msgid "Latest Tab title"
+msgstr ""
+
+#: core/edm-widgets/edm-default-tabbed.php:42
+#: core/edm-widgets/edm-default-tabbed.php:70
+msgid "Latest"
+msgstr ""
+
+#: core/edm-widgets/edm-default-tabbed.php:48
+msgid "Comments Tab title"
+msgstr ""
+
+#: core/edm-widgets/edm-default-tabbed.php:49
+#: core/edm-widgets/edm-default-tabbed.php:71
+msgid "Comments"
+msgstr ""
+
+#: core/edm-widgets/edm-default-tabbed.php:123
+msgid "&nbsp;commented on"
+msgstr ""
+
+#: core/edm-widgets/edm-featured-posts.php:26
+msgid "Displays featured posts from selected categories in different layouts."
+msgstr ""
+
+#: core/edm-widgets/edm-featured-posts.php:28
+msgid "Featured Posts"
+msgstr ""
+
+#: core/edm-widgets/edm-recent-posts.php:26
+msgid "A widget shows recent posts with thumbnail."
+msgstr ""
+
+#: core/edm-widgets/edm-recent-posts.php:28
+msgid "Recent Posts"
+msgstr ""
+
+#: core/edm-widgets/edm-recent-posts.php:41
+#: core/edm-widgets/edm-social-media.php:41
+msgid "Widget title"
+msgstr ""
+
+#: core/edm-widgets/edm-recent-posts.php:47
+msgid "No. of Posts"
+msgstr ""
+
+#: core/edm-widgets/edm-social-media.php:26
+msgid "A widget shows the social media icons."
+msgstr ""
+
+#: core/edm-widgets/edm-social-media.php:28
+msgid "Social Media"
+msgstr ""
+
+#: core/edm-widgets/edm-widget-fields.php:227
+msgid "No image selected"
+msgstr ""
+
+#: core/edm-widgets/edm-widget-fields.php:235
+msgid "Remove"
+msgstr ""
+
+#: core/edm-widgets/edm-widget-fields.php:237
+msgid "Select Image"
+msgstr ""
+
+#: core/edm-widgets/edm-widget-functions.php:24
+msgid "Sidebar"
+msgstr ""
+
+#: core/edm-widgets/edm-widget-functions.php:26
+#: core/edm-widgets/edm-widget-functions.php:41
+#: core/edm-widgets/edm-widget-functions.php:56
+#: core/edm-widgets/edm-widget-functions.php:71
+#: core/edm-widgets/edm-widget-functions.php:86
+#: core/edm-widgets/edm-widget-functions.php:101
+msgid "Add widgets here."
+msgstr ""
+
+#: core/edm-widgets/edm-widget-functions.php:54
+msgid "Top Home Area (Full Width)"
+msgstr ""
+
+#: core/edm-widgets/edm-widget-functions.php:69
+msgid "Middle Home Area"
+msgstr ""
+
+#: core/edm-widgets/edm-widget-functions.php:84
+msgid "Home Sidebar( Middle part ) "
+msgstr ""
+
+#: core/edm-widgets/edm-widget-functions.php:99
+msgid "Bottom Home Area"
+msgstr ""
+
+#: core/edm-widgets/edm-widget-functions.php:114
+msgid "Footer %d"
+msgstr ""
+
+#: core/edm-widgets/edm-widget-functions.php:116
+msgid "Added widgets are display at Footer Widget Area."
+msgstr ""
+
+#: core/template-functions.php:284
+msgid "Select Category"
+msgstr ""
+
+#: core/template-tags.php:84
+#. translators: %s: post title
+msgid "Leave a Comment<span class=\"screen-reader-text\"> on %s</span>"
+msgstr ""
+
+#: core/template-tags.php:112
+#. translators: 1: list of tags.
+msgid "Tagged %1$s"
+msgstr ""
+
+#: core/template-tags.php:120 template-parts/content-page.php:37
+#. translators: %s: Name of current post. Only visible to screen readers
+msgid "Edit <span class=\"screen-reader-text\">%s</span>"
+msgstr ""
+
+#: functions.php:56
+msgid "Top Menu"
+msgstr ""
+
+#: functions.php:57
+msgid "Primary Menu"
+msgstr ""
+
+#: functions.php:58
+msgid "Footer Menu"
+msgstr ""
+
+#: search.php:23
+#. translators: %s: search query.
+msgid "Search Results for: %s"
+msgstr ""
+
+#: template-parts/content-none.php:16
+msgid "Nothing Found"
+msgstr ""
+
+#: template-parts/content-none.php:27
+#. translators: 1: link to WP admin new post page.
+msgid "Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
+msgstr ""
+
+#: template-parts/content-none.php:40
+msgid ""
+"Sorry, but nothing matched your search terms. Please try again with some "
+"different keywords."
+msgstr ""
+
+#: template-parts/content-none.php:46
+msgid ""
+"It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps "
+"searching can help."
+msgstr ""
+
+#: template-parts/content-page.php:24 template-parts/content-single.php:47
+#: template-parts/content.php:46
+msgid "Pages:"
+msgstr ""
+
+#: template-parts/content-single.php:36
+#. translators: %s: Name of current post. Only visible to screen readers
+msgid "Continue reading<span class=\"screen-reader-text\"> \"%s\"</span>"
+msgstr ""
+
+#: comments.php:42
+#. translators: 1: comment count number, 2: title.
+msgctxt "comments title"
+msgid "%1$s thought on &ldquo;%2$s&rdquo;"
+msgid_plural "%1$s thoughts on &ldquo;%2$s&rdquo;"
+msgstr[0] ""
+msgstr[1] ""
+
+#: core/edm-functions/options.php:15
+msgctxt "alignment"
+msgid "None"
+msgstr ""
+
+#: core/edm-functions/options.php:16 core/edm-functions/options.php:39
+msgctxt "alignment"
+msgid "Left"
+msgstr ""
+
+#: core/edm-functions/options.php:17 core/edm-functions/options.php:40
+msgctxt "alignment"
+msgid "Center"
+msgstr ""
+
+#: core/edm-functions/options.php:18 core/edm-functions/options.php:41
+msgctxt "alignment"
+msgid "Right"
+msgstr ""
+
+#: core/edm-functions/options.php:62
+msgctxt "transition effect"
+msgid "fade"
+msgstr ""
+
+#: core/edm-functions/options.php:63
+msgctxt "transition effect"
+msgid "fadeout"
+msgstr ""
+
+#: core/edm-functions/options.php:64
+msgctxt "transition effect"
+msgid "none"
+msgstr ""
+
+#: core/edm-functions/options.php:65
+msgctxt "transition effect"
+msgid "scrollHorz"
+msgstr ""
+
+#: core/template-functions.php:133
+#. translators: If there are characters in your language that are not supported
+#. by Roboto, translate this to 'off'. Do not translate into your own language.
+msgctxt "Roboto font: on or off"
+msgid "on"
+msgstr ""
+
+#: core/template-functions.php:138
+#. translators: If there are characters in your language that are not supported
+#. by Signika, translate this to 'off'. Do not translate into your own
+#. language.
+msgctxt "Signika font: on or off"
+msgid "on"
+msgstr ""
+
+#: core/template-tags.php:32 core/template-tags.php:67
+#. translators: %s: post date.
+msgctxt "post date"
+msgid " %s"
+msgstr ""
+
+#: core/template-tags.php:38 core/template-tags.php:73
+#. translators: %s: post author.
+msgctxt "post author"
+msgid " %s"
+msgstr ""
+
+#: core/template-tags.php:109
+#. translators: used between list items, there is a space after the comma
+msgctxt "list item separator"
+msgid " "
+msgstr ""

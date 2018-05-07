@@ -1,0 +1,32 @@
+footer#colophon{
+
+
+    .widget{
+
+    &.education_master_carousel{
+
+        h3.edm-post-title a, time, .author, .author a{
+            color:$primary_color;
+        }
+        .edm-post-excerpt{
+            color:#000;
+        }
+    }
+
+    &.education_master_featured_posts {
+        .edm-single-post-wrap {
+            margin-bottom: 20px;
+            width: 98%;
+            width: 98%;
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+    }
+    .entry-date, .author{
+        font-size:12px;
+    }
+
+}
+    
+}

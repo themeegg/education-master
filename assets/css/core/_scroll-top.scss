@@ -1,0 +1,33 @@
+#edm-scrollup {
+	background-color: $primary_color;
+	bottom: 20px;
+	color: $color_2;
+	display: none;
+	height: 40px;
+	line-height: 35px;
+	position: fixed;
+	right: 20px;
+	width: 40px;
+	text-align: center;
+	font-size: 16px;
+	cursor: pointer;
+	-webkit-transition: all 0.5s ease;
+	-moz-transition: all 0.5s ease;
+	-ms-transition: all 0.5s ease;
+	-o-transition: all 0.5s ease;
+	transition: all 0.5s ease;
+	display: none;
+	border-radius: 100%;
+	&:hover {
+		color: $color_2;
+		border-radius: 100%;
+	}
+	&:focus {
+		color: $color_2;
+		border-radius: 100%;
+	}
+	&:active {
+		color: $color_2;
+		border-radius: 100%;
+	}
+}

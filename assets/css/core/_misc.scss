@@ -1,0 +1,869 @@
+
+.education_master_featured_slider {
+	margin: 0 0 25px;
+	.slider-posts {
+		float: left;
+		width: 50%;
+		margin: 0;
+		padding: 0;
+		.lSAction {
+			position: absolute;
+			right: 20px;
+			top: 20px;
+			> a {
+				background: rgba(0, 0, 0, 0.7) none repeat scroll 0 0;
+				color: $color_11;
+				display: inline-block;
+				font-size: 20px;
+				line-height: 30px;
+				margin: 0 2px;
+				opacity: 1;
+				position: static;
+				text-align: center;
+				&:hover {
+					background: $secondary_color;
+					color: $color_11;
+				}
+			}
+		}
+	}
+	.featured-posts {
+		float: right;
+		width: 50%;
+		padding: 0;
+		.edm-single-post-wrap {
+			float: left;
+			margin-bottom: 5px;
+			padding-left: 5px;
+			position: relative;
+			width: 50%;
+		}
+		.edm-single-post {
+			position: relative;
+			.edm-post-content {
+				position: absolute;
+				left: 0;
+				bottom: 0;
+				width: 100%;
+				padding: 15px;
+				background: rgba(0, 0, 0, 0) linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.8)) repeat scroll 0 0;
+				.edm-post-title {
+					line-height: 20px;
+					a {
+						font-size: 15px;
+						color: $color_11;
+						&:hover {
+							color: $primary_color;
+						}
+					}
+				}
+			}
+			.edm-post-meta {
+				span {
+					font-size: 12px;
+					a {
+						font-size: 12px;
+					}
+				}
+			}
+		}
+	}
+}
+
+.edm-single-slide-wrap {
+	position: relative;
+}
+
+.education_master_carousel {
+	.edm-single-post {
+		position: relative;
+		.edm-post-content {
+			bottom: 0;
+			left: 0;
+			padding: 20px;
+			position: absolute;
+			width: 100%;
+			background: rgba(0, 0, 0, 0) linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.8)) repeat scroll 0 0;
+		}
+		.edm-post-title {
+			line-height: 26px;
+			margin: 5px 0;
+			a {
+				color: $color_11;
+				font-size: 20px;
+				text-transform: capitalize;
+				&:hover {
+					color: $primary_color;
+				}
+			}
+		}
+	}
+	.edm-post-meta {
+		span {
+			color: $color_23;
+			a {
+				color: $color_23;
+			}
+		}
+	}
+	.carousel-posts {
+		&.layout2 {
+
+			.edm-single-post {
+				-webkit-box-shadow: 0 3px 5px rgba(0, 0, 0, .2);
+				-moz-box-shadow: 0 3px 5px rgba(0, 0, 0, .2);
+				-ms-box-shadow: 0 3px 5px rgba(0, 0, 0, .2);
+				box-shadow: 0 3px 5px rgba(0, 0, 0, .2);
+				-webkit-transition: all .3s ease-in-out 0s;
+				-moz-transition: all .3s ease-in-out 0s;
+				transition: all .3s ease-in-out 0s;
+				border-radius: 3px;
+				-moz-border-radius: 3px;
+				-ms-border-radius: 3px;
+				padding: 20px;
+				max-width: 100%;
+				background: #fff;
+				&:hover {
+					z-index: 9999;
+					-webkit-box-shadow: 0 15px 30px rgba(0, 0, 0, .1);
+					-moz-box-shadow: 0 15px 30px rgba(0, 0, 0, .1);
+					-ms-box-shadow: 0 15px 30px rgba(0, 0, 0, .1);
+					box-shadow: 0 15px 30px rgba(0, 0, 0, .1);
+				}
+				.edm-post-content {
+					position: relative;
+					padding: 20px;
+					max-width: 100%;
+					background: #fff;
+
+				}
+				.edm-post-title {
+					line-height: 26px;
+					margin: 5px 0;
+					a {
+						color: $primary_color;
+						font-size: 20px;
+						text-transform: capitalize;
+						&:hover {
+							color: $primary_color;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+.education_master_block_posts {
+	.layout3 {
+		.edm-primary-block-wrap {
+			position: relative;
+			width: 100%;
+			.edm-single-post {
+				.edm-post-content {
+					bottom: 0;
+					left: 0;
+					padding: 20px;
+					position: absolute;
+					width: 100%;
+					background: rgba(0, 0, 0, 0) linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.8)) repeat scroll 0 0;
+				}
+				.edm-post-title {
+					line-height: 26px;
+					margin: 5px 0;
+					a {
+						color: $color_11;
+						font-size: 20px;
+						text-transform: capitalize;
+						&:hover {
+							color: $primary_color;
+						}
+					}
+				}
+			}
+			.edm-post-meta {
+				span {
+					color: $color_23;
+					a {
+						color: $color_23;
+					}
+				}
+			}
+		}
+		.edm-secondary-block-wrap {
+			margin-top: 20px;
+			width: 102%;
+			margin-left: -2%;
+			.edm-single-post {
+				border: medium none;
+				float: left;
+				margin-bottom: 0;
+				margin-left: 2%;
+				padding: 0;
+				width: 31.33%;
+				.edm-post-thumb {
+					float: none;
+					width: 100%;
+				}
+				.edm-post-content {
+					float: none;
+					width: 100%;
+					margin-top: 10px;
+				}
+			}
+		}
+	}
+	.edm-primary-block-wrap {
+		float: left;
+		width: 48%;
+	}
+	.edm-secondary-block-wrap {
+		float: right;
+		width: 49%;
+	}
+	.layout2 {
+		.edm-primary-block-wrap {
+			margin-left: -3%;
+			width: 103%;
+			margin-bottom: 10px;
+			.edm-single-post {
+				display: inline-block;
+				float: none;
+				margin-left: 3%;
+				margin-right: -4px;
+				vertical-align: top;
+				width: 47%;
+			}
+		}
+		.edm-secondary-block-wrap {
+			margin-left: -3%;
+			width: 103%;
+			.edm-single-post {
+				display: inline-block;
+				float: none;
+				margin-left: 3%;
+				margin-right: -4px;
+				vertical-align: top;
+				width: 47%;
+				&:nth-child(4) {
+					border-bottom: 1px solid #e1e1e1;
+					padding-bottom: 12px;
+				}
+			}
+		}
+	}
+	.layout4 {
+		.edm-block-posts-wrapper {
+			display: flex;
+			flex-wrap: wrap;
+			.edm-alt-grid-post {
+				display: flex;
+				flex-direction: column;
+				width: 33.33%;
+				.edm-post-content {
+					background: #f2f2f2 none repeat scroll 0 0;
+					height: 242px;
+					overflow: hidden;
+					padding: 11px 15px 15px;
+					.edm-post-excerpt {
+						line-height: 27px;
+						margin-top: 10px;
+					}
+				}
+				&:nth-child(2) {
+					flex-direction: column-reverse;
+				}
+			}
+		}
+	}
+}
+
+.edm-slide-content-wrap {
+	bottom: 0;
+	left: 0;
+	padding: 20px;
+	position: absolute;
+	width: 100%;
+	background: rgba(0, 0, 0, 0) linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.8)) repeat scroll 0 0;
+	.post-title {
+		line-height: 26px;
+		margin: 5px 0;
+		a {
+			color: $color_11;
+			font-size: 20px;
+			text-transform: capitalize;
+			&:hover {
+				color: $primary_color;
+			}
+		}
+	}
+	.edm-post-meta {
+		span {
+			color: $color_20;
+			font-size: 14px;
+			font-style: normal;
+			font-weight: 500;
+			margin-right: 15px;
+			a {
+				color: $color_20;
+				font-size: 14px;
+				font-style: normal;
+				font-weight: 500;
+			}
+		}
+	}
+}
+
+.education_master_featured_posts {
+	.edm-single-post {
+		.edm-post-content {
+			.edm-post-title {
+				line-height: 26px;
+				margin: 5px 0;
+				a {
+					color: $color_11;
+					font-size: 20px;
+					text-transform: capitalize;
+					&:hover {
+						color: $primary_color;
+					}
+				}
+			}
+			background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
+			float: left;
+			padding: 0;
+			position: static;
+		}
+		.edm-post-meta {
+			span {
+				color: $color_20;
+				font-size: 14px;
+				font-style: normal;
+				font-weight: 500;
+				margin-right: 15px;
+				a {
+					color: $color_20;
+					font-size: 14px;
+					font-style: normal;
+				}
+			}
+		}
+	}
+	.edm-featured-posts-wrapper {
+		margin-left: -2%;
+	}
+	.edm-single-post-wrap {
+		float: left;
+		margin-left: 2%;
+		width: 23%;
+		.edm-post-thumb {
+			float: left;
+			width: 42%;
+		}
+		.edm-post-content {
+			float: left;
+			margin-left: 4%;
+			width: 54%;
+			.edm-post-title {
+				a {
+					color: $color_16;
+					font-size: 14px;
+					&:hover {
+						color: $primary_color;
+					}
+				}
+				line-height: 20px;
+				margin: 0 0 2px;
+			}
+			.edm-post-meta {
+				.byline {
+					display: block;
+				}
+				span {
+					color: $color_21;
+					a {
+						color: $color_21;
+						&:hover {
+							color: $primary_color;
+						}
+					}
+					&:hover {
+						color: $primary_color;
+					}
+				}
+			}
+		}
+	}
+}
+
+.edm-home-top-section {
+	.education_master_featured_posts {
+		.edm-block-wrapper {
+			background: #f2f2f2 none repeat scroll 0 0;
+			padding: 20px 0;
+		}
+	}
+}
+
+.edm-post-thumb {
+	overflow: hidden;
+
+	img {
+		opacity: 1;
+		-webkit-transition: .3s ease-in-out;
+		transition: .3s ease-in-out;
+	}
+	&:hover {
+		img {
+			opacity: .9;
+
+		}
+	}
+
+}
+
+.edm-slide-thumb {
+	overflow: hidden;
+	img {
+		-webkit-filter: grayscale(100%);
+		-moz-filter: grayscale(100%);
+		filter: grayscale(100%);
+		transition: all 0.5s ease;
+	}
+	&:hover {
+		img {
+			-webkit-filter: grayscale(0%);
+			-moz-filter: grayscale(0%);
+			filter: grayscale(0%);
+
+		}
+	}
+}
+
+.edm-home-middle-section {
+	.middle-primary {
+		float: left;
+		width: 67%;
+	}
+	.middle-aside {
+		float: right;
+		width: 31%;
+	}
+}
+
+.edm-title {
+	color: #fff;
+}
+
+.widget-title, .page-header .page-title, .edm-related-title, .edm-block-title {
+	background: $primary_color none repeat scroll 0 0;
+	border: none;
+	font-size: 16px;
+	margin: 0 0 20px;
+	padding: 8px 20px;
+	text-transform: capitalize;
+	border-left: none;
+	border-right: none;
+	color: #fff;
+	text-align: left;
+	font-weight: 500;
+	position: relative;
+	&:after {
+		border-left: 9px solid rgba(0, 0, 0, 0);
+		border-right: 9px solid rgba(0, 0, 0, 0);
+		border-top: 9px solid $primary_color;
+		bottom: -20px;
+		content: "";
+		display: block;
+		height: 21px;
+		left: 5%;
+		margin: 0 auto;
+		position: absolute;
+		width: 13px;
+		z-index: 9;
+	}
+	&:before {
+
+		position: absolute;
+		content: "";
+		width: 100%;
+		left: 0;
+		top: -3px;
+		border-top: 2px solid $active_color;
+	}
+}
+
+.edm-post-title.large-size {
+	a {
+		color: $color_16;
+		display: block;
+		font-size: 16px;
+	}
+	margin: 15px 0 10px;
+	text-transform: capitalize;
+}
+
+.edm-post-title.small-size {
+	a {
+		color: $color_16;
+		display: block;
+		font-size: 16px;
+		font-size: 14px;
+		font-weight: 500;
+		&:hover {
+			color: $secondary_font_color;
+		}
+	}
+	margin: 15px 0 10px;
+	text-transform: capitalize;
+	margin-top: 0;
+	line-height: 22px;
+	margin: 2px 0 3px;
+}
+
+.edm-post-meta {
+	span {
+		color: $color_22;
+		font-size: 12px;
+		font-style: normal;
+		font-weight: 400;
+		-webkit-transition: all 0.5s ease;
+		-o-transition: all 0.5s ease;
+		transition: all 0.5s ease;
+		display: inline-block;
+		margin-right: 15px;
+		a {
+			color: $color_22;
+			font-size: 12px;
+			font-style: normal;
+			font-weight: 400;
+			-webkit-transition: all 0.5s ease;
+			-o-transition: all 0.5s ease;
+			transition: all 0.5s ease;
+			display: inline-block;
+			&:hover {
+				color: $primary_color;
+			}
+		}
+		&:hover {
+			color: $primary_color;
+		}
+	}
+}
+
+.edm-post-excerpt {
+	margin-top: 12px;
+	p {
+		margin-bottom: 0;
+	}
+}
+
+.edm-secondary-block-wrap {
+	.edm-post-thumb {
+		float: left;
+		width: 30%;
+	}
+	.edm-post-content {
+		float: right;
+		width: 66%;
+	}
+	.edm-single-post {
+		border-bottom: 1px solid #e1e1e1;
+		margin-bottom: 12px;
+		padding-bottom: 12px;
+		&:last-child {
+			border-bottom: none;
+			margin-bottom: 0;
+			padding-bottom: 0;
+		}
+	}
+	.edm-post-meta {
+		span {
+			font-size: 12px;
+			a {
+				font-size: 12px;
+			}
+		}
+	}
+}
+
+.education_master_default_tabbed {
+	.edm-post-thumb {
+		float: left;
+		width: 30%;
+	}
+	.edm-post-content {
+		float: right;
+		width: 66%;
+	}
+	.edm-single-post {
+		border-bottom: 1px solid #e1e1e1;
+		margin-bottom: 12px;
+		padding-bottom: 12px;
+		&:last-child {
+			border-bottom: none;
+			margin-bottom: 0;
+			padding-bottom: 0;
+		}
+	}
+	#comments {
+		ul {
+			li {
+				border-bottom: 1px solid #e1e1e1;
+				margin-bottom: 12px;
+				padding-bottom: 12px;
+				&:last-child {
+					border-bottom: none;
+					margin-bottom: 0;
+					padding-bottom: 0;
+				}
+			}
+			margin: 0;
+			list-style: none;
+			.edm-comment-avatar {
+				float: left;
+				width: 25%;
+				img {
+					width: 100%;
+				}
+			}
+			.edm-comment-desc-wrap {
+				float: right;
+				width: 71%;
+			}
+		}
+	}
+	.edm-post-meta {
+		span {
+			font-size: 12px;
+			margin-right: 10px;
+			a {
+				font-size: 12px;
+			}
+		}
+	}
+	ul.widget-tabs {
+		margin: 0;
+		list-style: none;
+		li {
+			background: $primary_color none repeat scroll 0 0;
+			display: inline-block;
+			margin-right: -4px;
+			padding: 5px 0;
+			text-align: center;
+			width: 50%;
+			position: relative;
+			a {
+				color: $color_11;
+				font-weight: 600;
+				text-transform: uppercase;
+				display: block;
+			}
+			&:hover {
+				background: $active_color;
+				-webkit-transition: all 0.5s ease;
+				-o-transition: all 0.5s ease;
+				transition: all 0.5s ease;
+				&:after {
+					background: none;
+					border-left: 9px solid transparent;
+					border-right: 9px solid transparent;
+					border-top: 9px solid $active_color;
+					bottom: -20px;
+					content: "";
+					display: block;
+					height: 21px;
+					left: 49%;
+					margin: 0 auto;
+					position: absolute;
+					width: 13px;
+					z-index: 9;
+				}
+			}
+
+		}
+		li.ui-tabs-active {
+			background: $active_color;
+			-webkit-transition: all 0.5s ease;
+			-o-transition: all 0.5s ease;
+			transition: all 0.5s ease;
+			&:after {
+				background: none;
+				border-left: 9px solid transparent;
+				border-right: 9px solid transparent;
+				border-top: 9px solid $active_color;
+				bottom: -20px;
+				content: "";
+				display: block;
+				height: 21px;
+				left: 49%;
+				margin: 0 auto;
+				position: absolute;
+				width: 13px;
+				z-index: 9;
+			}
+
+		}
+	}
+	.edm-tabbed-section {
+		margin-top: 20px;
+		border: 1px solid #e1e1e1;
+		border-top: none;
+		margin-top: 0;
+		padding: 20px;
+	}
+}
+
+.edm-related-posts-wrap {
+	.edm-post-meta {
+		span {
+			font-size: 12px;
+			a {
+				font-size: 12px;
+			}
+		}
+	}
+	.edm-post-title {
+		margin: 10px 0 5px;
+	}
+	margin-left: -2%;
+}
+
+.middle-primary {
+	.education_master_featured_posts {
+		.edm-single-post-wrap {
+			float: left;
+			margin-bottom: 2%;
+			margin-left: 2%;
+			width: 31.33%;
+			width: 48%;
+		}
+		.edm-featured-posts-wrapper {
+			margin-left: -2%;
+		}
+		.edm-single-post {
+			img {
+				width: 100%;
+			}
+		}
+	}
+}
+
+.middle-aside {
+	.education_master_featured_posts {
+		.edm-single-post-wrap {
+			margin-bottom: 20px;
+			width: 98%;
+			width: 98%;
+			&:last-child {
+				margin-bottom: 0;
+			}
+		}
+	}
+}
+
+.carousel-posts {
+	position: relative;
+
+	.carousel-nav-action {
+		position: absolute;
+		right: 0;
+		top: 0;
+		.carousel-controls {
+			background: $active_color none repeat scroll 0 0;
+			color: $color_11;
+			display: inline-block;
+			font-size: 16px;
+			margin-left: 0;
+			padding: 3px 13px;
+			cursor: pointer;
+			-webkit-transition: all 0.5s ease;
+			-o-transition: all 0.5s ease;
+			transition: all 0.5s ease;
+			&:hover {
+				background: $secondary_color;
+			}
+		}
+	}
+	&.layout2 {
+
+		.carousel-nav-action {
+			position: inherit;
+			margin: 0 auto;
+			float: none;
+			display: block;
+			text-align: center;
+			margin-top: 20px;
+			.carousel-controls {
+				background: $active_color none repeat scroll 0 0;
+				color: $color_11;
+				display: inline-block;
+				font-size: 16px;
+				margin-left: 0;
+				padding: 3px 13px;
+				cursor: pointer;
+				-webkit-transition: all 0.5s ease;
+				-o-transition: all 0.5s ease;
+				transition: all 0.5s ease;
+				&:hover {
+					background: $secondary_color;
+				}
+			}
+		}
+	}
+}
+
+.education_master_recent_posts {
+	.edm-recent-posts-wrapper {
+		ul {
+			list-style: none;
+			margin: 0;
+			padding: 0;
+		}
+		.edm-single-post {
+			margin-bottom: 10px;
+			padding-bottom: 10px;
+		}
+		.edm-post-thumb {
+			float: left;
+			width: 30%;
+		}
+		.edm-post-content {
+			float: left;
+			margin-left: 4%;
+			width: 66%;
+		}
+	}
+}
+
+.edm-social-icons-wrapper {
+	text-align: center;
+}
+
+.education_master_social_media {
+	.social-link {
+		display: inline-block;
+		vertical-align: top;
+		a {
+			background: $primary_color none repeat scroll 0 0;
+			color: $color_11;
+			display: block;
+			margin-right: 10px;
+			padding: 7px 15px;
+			border-radius: 100%;
+			&:hover {
+				background: $active_color;
+			}
+		}
+	}
+}
+
+.education_master_ads_banner {
+	text-align: center;
+}
+
+#colophon {
+	background: $secondary_font_color;
+	margin-top: 40px;
+	color: #fff;
+}

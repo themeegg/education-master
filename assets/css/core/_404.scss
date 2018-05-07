@@ -1,0 +1,37 @@
+.error404 {
+	#primary {
+		float: none;
+		padding: 90px 0;
+		width: 100%;
+	}
+	.page-title {
+		background: $secondary_color none repeat scroll 0 0;
+		color: $color_11;
+		font-size: 20px;
+		margin: 0;
+		padding: 10px 0;
+		text-align: center;
+	}
+	.page-content {
+		font-size: 14px;
+		text-align: center;
+	}
+}
+
+.error-404.not-found {
+	border: 1px solid #e1e1e1;
+	margin: 0 auto;
+	max-width: 700px;
+}
+
+.error-num {
+	font-size: 114px;
+	font-weight: 700;
+	text-align: center;
+	> span {
+		font-size: 34px;
+		text-transform: uppercase;
+	}
+}
+
+

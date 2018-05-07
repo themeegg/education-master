@@ -1,0 +1,23 @@
+.navigation {
+  .nav-links {
+    a {
+      background: $primary_color;
+      color: $color_2;
+      cursor: pointer;
+      font-size: 14px;
+      line-height: 13px;
+      height: 33px;
+      border: none;
+      padding: 10px 15px;
+      font-weight: 400;
+      display: inline-block;
+      position: relative;
+      text-shadow: none;
+      border: 1px solid $primary_color;
+      &:hover {
+        background: $primary_color;
+        color: $color_2 !important;
+      }
+    }
+  }
+}

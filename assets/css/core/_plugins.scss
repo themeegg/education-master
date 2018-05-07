@@ -1,0 +1,40 @@
+// Event Calendar support
+.tribe-events-list-widget {
+	.tribe-events-widget-link {
+		a {
+			padding: 10px;
+			background: $active_color;
+			color: #fff;
+			font-weight: normal;
+			&:after {
+				content: "\f061";
+				font: normal normal normal 14px/1 FontAwesome;
+				margin-left: 10px;
+
+			}
+			&:hover {
+				color: #f9f9f9;
+			}
+		}
+	}
+
+	.tribe-list-widget {
+		.tribe-events-list-widget-events {
+			margin-bottom: 1.25rem;
+			background: #f9f9f9;
+			padding: 5px 10px;
+			border: 1px solid #c1c1c1;
+
+			.tribe-event-image {
+				max-width: 100%;
+				margin: 0;
+			}
+			.tribe-event-title, .tribe-event-duration {
+				color: inherit;
+				a {
+					color: inherit;
+				}
+			}
+		}
+	}
+}

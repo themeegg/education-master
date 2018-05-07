@@ -1,0 +1,62 @@
+@media screen and (max-device-width: 767px) {
+	/* some CSS here */
+
+	#masthead.site-header.default {
+		.site-branding {
+			position: relative;
+			border: none;
+			border-radius: 0;
+			width: 100%;
+			float: none;
+		}
+		.edm-navigation {
+			max-width: 100%;
+			width: 100%;
+			padding: 5px 0;
+			.search-main {
+				line-height: 35px;
+			}
+			#site-navigation {
+				ul {
+					li {
+						text-align: left;
+						a {
+							padding: 5px 15px;
+						}
+					}
+
+				}
+			}
+		}
+
+	}
+}
+
+@media screen and (max-device-width: 380px) {
+	.middle-primary {
+		.education_master_featured_posts {
+			.edm-single-post-wrap {
+
+				width: 98%;
+				max-width: 98%;
+
+			}
+		}
+	}
+}
+
+@media screen and (max-device-width: 550px) {
+	.edm-header-search-wrapper {
+		.search-form-main {
+			.search-field {
+				width: 100%;
+				max-width: 100%;
+			}
+			.search-submit {
+				width: 100%;
+				max-width: 100%;
+			}
+
+		}
+	}
+}

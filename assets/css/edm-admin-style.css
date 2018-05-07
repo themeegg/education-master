@@ -1,0 +1,146 @@
+span.field-label {
+	font-weight: 600;
+	font-size: 14px;
+	text-align: left
+}
+
+.widget-content .attachment-media-view {
+	font-size: 13px;
+	line-height: 1.5;
+	margin: 1em 0
+}
+
+.widget-content .placeholder {
+	width: 100%;
+	position: relative;
+	text-align: center;
+	cursor: default;
+	border: 1px dashed #b4b9be;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	padding: 9px 0;
+	line-height: 20px
+}
+
+.widget-content .actions {
+	margin-top: 8px
+}
+
+.widget-content .selector-labels label {
+	display: inline-block;
+	padding: 10px 5px 0;
+	position: relative;
+	max-width: 50%;
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box
+}
+
+.widget-content .selector-labels label.selector-selected:after {
+	content: "";
+	height: 35px;
+	width: 35px;
+	right: 0;
+	top: 0;
+	position: absolute;
+	background: url(../images/selected.png) no-repeat right top
+}
+
+#education_master_page_meta ul.edm-meta-menu-wrapper, #education_master_post_meta ul.edm-meta-menu-wrapper {
+	border-right: 1px solid #e1e1e1;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	float: left;
+	margin: 0;
+	width: 22%
+}
+
+.edm-single-meta.active {
+	display: block
+}
+
+.edm-meta-tab span.dashicons {
+	margin-right: 7px
+}
+
+.edm-meta-menu-wrapper li {
+	margin: 0;
+	padding: 10px;
+	border: 1px solid #dcdcdc;
+	border-left: none;
+	border-right: none;
+	border-top: none;
+	cursor: pointer
+}
+
+.edm-meta-menu-wrapper li:last-child {
+	border-bottom: none
+}
+
+.edm-metabox-content-wrapper .edm-single-meta {
+	display: none
+}
+
+.edm-metabox-content-wrapper {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	float: right;
+	margin-left: 0;
+	padding: 0;
+	width: 76%
+}
+
+.edm-meta-container {
+	border: 1px solid #e1e1e1;
+	position: relative;
+	margin: 20px 0
+}
+
+.edm-meta-options-wrap .ui-button {
+	margin: 0;
+	border-radius: 0;
+	border: none;
+	background: 0 0
+}
+
+.edm-meta-options-wrap .ui-button-text {
+	padding: 0
+}
+
+.edm-meta-options-wrap img {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	max-width: 100%;
+	height: auto;
+	padding: 1px;
+	border: 4px solid transparent
+}
+
+.edm-meta-options-wrap img:focus, .edm-meta-options-wrap img:hover {
+	border-color: #ddd
+}
+
+.edm-meta-options-wrap .ui-state-active img {
+	border-color: #e44a3c
+}
+
+.edm-clearfix:after, .edm-clearfix:before {
+	content: '';
+	display: table
+}
+
+.edm-clearfix:after {
+	clear: both
+}
+#widget-list div[id*="education_master_"].widget h3{
+	background: #e44a3c;
+	color: #fff;
+}
+
+div[id*=education_master_].widget h3 {
+	border-left: 3px solid #e44a3c
+}

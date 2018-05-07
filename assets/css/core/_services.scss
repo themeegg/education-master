@@ -1,0 +1,73 @@
+.edm-service-container {
+	margin-top: 0;
+	position: relative;
+	z-index: 9;
+	display: inline-block;
+	margin-bottom: 20px;
+
+	.edm-single-service {
+		float: left;
+		margin-top: -140px;
+		position: relative;
+		top: 0;
+		-webkit-transition: all 0.3s cubic-bezier(0, .01, .27, 1);
+		-moz-transition: all 0.3s cubic-bezier(0, .01, .27, 1);
+		-o-transition: all 0.3s cubic-bezier(0, .01, .27, 1);
+		transition: all 0.3s cubic-bezier(0, .01, .27, 1);
+		&:hover {
+			top: -20px;
+
+		}
+	}
+	.edm-service-col-4 {
+		width: 25%;
+
+	}
+	.edm-service-wrapper {
+
+		padding: 20px;
+		.icon_alignment {
+			height: 69px;
+			i {
+				font-size: 73px;
+				color: #ffffff;
+			}
+
+		}
+		&:after {
+			clear: both;
+		}
+		.service-title {
+			font-weight: 700;
+			font-size: 18px;
+			color: #fff;
+			margin-top: 10px;
+			padding: 5px 0;
+			a {
+				color: #fff;
+				text-transform: uppercase;
+				&:hover {
+					color: $active_color;
+				}
+			}
+
+		}
+		p {
+			color: #fff;
+			margin-bottom: 10px;
+		}
+
+	}
+
+}
+
+@media screen and (max-device-width: 640px) {
+	/* some CSS here */
+	.edm-service-container {
+		.edm-single-service {
+			width: 100%;
+			float: none;
+			margin-top: 0;
+		}
+	}
+}

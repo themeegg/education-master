@@ -1,0 +1,1018 @@
+/*--------------------------------------------------------------
+Reset
+--------------------------------------------------------------*/
+html {
+	border: 0;
+	font-family: $primary_font_family;
+	font-size: 100%;
+	font-style: inherit;
+	font-weight: inherit;
+	margin: 0;
+	outline: 0;
+	padding: 0;
+	vertical-align: baseline;
+	font-size: 62.5%;
+	overflow-y: scroll;
+	-webkit-text-size-adjust: 100%;
+	-ms-text-size-adjust: 100%;
+}
+
+body {
+	border: 0;
+	font-family: $primary_font_family;
+	font-size: 100%;
+	font-style: inherit;
+	font-weight: inherit;
+	margin: 0;
+	outline: 0;
+	padding: 0;
+	vertical-align: baseline;
+	background: #fff;
+	color: $color_1;
+	font-family: $title_font_family;
+	font-size: 14px;
+	line-height: 1.8;
+	font-weight: 400;
+	font-weight: 400;
+	overflow: hidden;
+	position: relative;
+	font-family: $title_font_family;
+	line-height: 1.8;
+}
+
+div {
+	border: 0;
+	font-family: $primary_font_family;
+	font-size: 100%;
+	font-style: inherit;
+	font-weight: inherit;
+	margin: 0;
+	outline: 0;
+	padding: 0;
+	vertical-align: baseline;
+}
+
+span {
+	border: 0;
+	font-family: $primary_font_family;
+	font-size: 100%;
+	font-style: inherit;
+	font-weight: inherit;
+	margin: 0;
+	outline: 0;
+	padding: 0;
+	vertical-align: baseline;
+}
+
+applet {
+	border: 0;
+	font-family: $primary_font_family;
+	font-size: 100%;
+	font-style: inherit;
+	font-weight: inherit;
+	margin: 0;
+	outline: 0;
+	padding: 0;
+	vertical-align: baseline;
+}
+
+object {
+	border: 0;
+	font-family: $primary_font_family;
+	font-size: 100%;
+	font-style: inherit;
+	font-weight: inherit;
+	margin: 0;
+	outline: 0;
+	padding: 0;
+	vertical-align: baseline;
+	max-width: 100%;
+}
+
+iframe {
+	border: 0;
+	font-family: $primary_font_family;
+	font-size: 100%;
+	font-style: inherit;
+	font-weight: inherit;
+	margin: 0;
+	outline: 0;
+	padding: 0;
+	vertical-align: baseline;
+	max-width: 100%;
+}
+
+h1 {
+	border: 0;
+	font-style: inherit;
+	margin: 0;
+	outline: 0;
+	padding: 0;
+	vertical-align: baseline;
+	clear: both;
+	font-family: $title_font_family;
+	line-height: 1.5em;
+	margin-bottom: 15px;
+	color: $color_1;
+	font-weight: 700;
+	font-size: 36px;
+}
+
+h2 {
+	border: 0;
+	font-family: $primary_font_family;
+	font-size: 100%;
+	font-style: inherit;
+	font-weight: inherit;
+	margin: 0;
+	outline: 0;
+	padding: 0;
+	vertical-align: baseline;
+	clear: both;
+	font-weight: normal;
+	font-family: $title_font_family;
+	line-height: 1.3;
+	margin-bottom: 15px;
+	color: $color_1;
+	font-weight: 700;
+	font-size: 30px;
+}
+
+h3 {
+	border: 0;
+	font-family: $primary_font_family;
+	font-size: 100%;
+	font-style: inherit;
+	font-weight: inherit;
+	margin: 0;
+	outline: 0;
+	padding: 0;
+	vertical-align: baseline;
+	clear: both;
+	font-weight: normal;
+	font-family: $title_font_family;
+	line-height: 1.3;
+	margin-bottom: 15px;
+	color: $color_1;
+	font-weight: 700;
+	font-size: 26px;
+}
+
+h4 {
+	border: 0;
+	font-family: $primary_font_family;
+	font-size: 100%;
+	font-style: inherit;
+	font-weight: inherit;
+	margin: 0;
+	outline: 0;
+	padding: 0;
+	vertical-align: baseline;
+	clear: both;
+	font-weight: normal;
+	font-family: $title_font_family;
+	line-height: 1.3;
+	margin-bottom: 15px;
+	color: $color_1;
+	font-weight: 700;
+	font-size: 20px;
+}
+
+h5 {
+	border: 0;
+	font-family: $primary_font_family;
+	font-size: 100%;
+	font-style: inherit;
+	font-weight: inherit;
+	margin: 0;
+	outline: 0;
+	padding: 0;
+	vertical-align: baseline;
+	clear: both;
+	font-weight: normal;
+	font-family: $title_font_family;
+	line-height: 1.3;
+	margin-bottom: 15px;
+	color: $color_1;
+	font-weight: 700;
+	font-size: 18px;
+}
+
+h6 {
+	border: 0;
+	font-family: $primary_font_family;
+	font-size: 100%;
+	font-style: inherit;
+	font-weight: inherit;
+	margin: 0;
+	outline: 0;
+	padding: 0;
+	vertical-align: baseline;
+	clear: both;
+	font-weight: normal;
+	font-family: $title_font_family;
+	line-height: 1.3;
+	margin-bottom: 15px;
+	color: $color_1;
+	font-weight: 700;
+	font-size: 16px;
+}
+
+p {
+	border: 0;
+	font-family: $primary_font_family;
+	font-size: 100%;
+	font-style: inherit;
+	font-weight: inherit;
+	margin: 0;
+	outline: 0;
+	padding: 0;
+	vertical-align: baseline;
+	margin-bottom: 20px;
+}
+
+blockquote {
+	border: 0;
+	font-family: $primary_font_family;
+	font-size: 100%;
+	font-style: inherit;
+	font-weight: inherit;
+	margin: 0;
+	outline: 0;
+	padding: 0;
+	vertical-align: baseline;
+	quotes: "" "";
+	margin: 0 15px;
+	font-size: 20px;
+	font-style: italic;
+	font-family: $title_font_family;
+	font-weight: 300;
+	&:before {
+		content: "";
+	}
+	&:after {
+		content: "";
+	}
+}
+
+pre {
+	border: 0;
+	font-family: $primary_font_family;
+	font-size: 100%;
+	font-style: inherit;
+	font-weight: inherit;
+	margin: 0;
+	outline: 0;
+	padding: 0;
+	vertical-align: baseline;
+	background: #eee;
+	font-family: $font_family_3;
+	font-size: 15px;
+	font-size: 1.5rem;
+	line-height: 1.6;
+	margin-bottom: 1.6em;
+	max-width: 100%;
+	overflow: auto;
+	padding: 1.6em;
+}
+
+a {
+	border: 0;
+	font-family: $primary_font_family;
+	font-size: 100%;
+	font-style: inherit;
+	font-weight: inherit;
+	margin: 0;
+	outline: 0;
+	padding: 0;
+	vertical-align: baseline;
+	color: $primary_color;
+	text-decoration: none;
+	transition: all 0.3s ease-in-out;
+	-webkit-transition: all 0.3s ease-in-out;
+	-moz-transition: all 0.3s ease-in-out;
+	&:focus {
+		outline: 0;
+		color: $primary_color;
+	}
+	&:hover {
+		outline: 0;
+		color: $primary_color;
+	}
+	&:active {
+		outline: 0;
+		color: $primary_color;
+	}
+	img {
+		border: 0;
+	}
+}
+
+abbr {
+	border: 0;
+	font-family: $primary_font_family;
+	font-size: 100%;
+	font-style: inherit;
+	font-weight: inherit;
+	margin: 0;
+	outline: 0;
+	padding: 0;
+	vertical-align: baseline;
+	border-bottom: 1px dotted #666;
+	cursor: help;
+}
+
+acronym {
+	border: 0;
+	font-family: $primary_font_family;
+	font-size: 100%;
+	font-style: inherit;
+	font-weight: inherit;
+	margin: 0;
+	outline: 0;
+	padding: 0;
+	vertical-align: baseline;
+	border-bottom: 1px dotted #666;
+	cursor: help;
+}
+
+address {
+	border: 0;
+	font-family: $primary_font_family;
+	font-size: 100%;
+	font-style: inherit;
+	font-weight: inherit;
+	margin: 0;
+	outline: 0;
+	padding: 0;
+	vertical-align: baseline;
+	margin: 0 0 15px;
+}
+
+big {
+	border: 0;
+	font-family: $primary_font_family;
+	font-size: 100%;
+	font-style: inherit;
+	font-weight: inherit;
+	margin: 0;
+	outline: 0;
+	padding: 0;
+	vertical-align: baseline;
+	font-size: 125%;
+}
+
+cite {
+	border: 0;
+	font-family: $primary_font_family;
+	font-size: 100%;
+	font-style: inherit;
+	font-weight: inherit;
+	margin: 0;
+	outline: 0;
+	padding: 0;
+	vertical-align: baseline;
+	font-style: italic;
+}
+
+code {
+	border: 0;
+	font-family: $primary_font_family;
+	font-size: 100%;
+	font-style: inherit;
+	font-weight: inherit;
+	margin: 0;
+	outline: 0;
+	padding: 0;
+	vertical-align: baseline;
+	font: 15px Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
+}
+
+del {
+	border: 0;
+	font-family: $primary_font_family;
+	font-size: 100%;
+	font-style: inherit;
+	font-weight: inherit;
+	margin: 0;
+	outline: 0;
+	padding: 0;
+	vertical-align: baseline;
+}
+
+dfn {
+	border: 0;
+	font-family: $primary_font_family;
+	font-size: 100%;
+	font-style: inherit;
+	font-weight: inherit;
+	margin: 0;
+	outline: 0;
+	padding: 0;
+	vertical-align: baseline;
+	font-style: italic;
+}
+
+em {
+	border: 0;
+	font-family: $primary_font_family;
+	font-size: 100%;
+	font-style: inherit;
+	font-weight: inherit;
+	margin: 0;
+	outline: 0;
+	padding: 0;
+	vertical-align: baseline;
+	font-style: italic;
+}
+
+font {
+	border: 0;
+	font-family: $primary_font_family;
+	font-size: 100%;
+	font-style: inherit;
+	font-weight: inherit;
+	margin: 0;
+	outline: 0;
+	padding: 0;
+	vertical-align: baseline;
+}
+
+ins {
+	border: 0;
+	font-family: $primary_font_family;
+	font-size: 100%;
+	font-style: inherit;
+	font-weight: inherit;
+	margin: 0;
+	outline: 0;
+	padding: 0;
+	vertical-align: baseline;
+	background: #fff9c0;
+	text-decoration: none;
+}
+
+kbd {
+	border: 0;
+	font-family: $primary_font_family;
+	font-size: 100%;
+	font-style: inherit;
+	font-weight: inherit;
+	margin: 0;
+	outline: 0;
+	padding: 0;
+	vertical-align: baseline;
+	font: 15px Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
+}
+
+q {
+	border: 0;
+	font-family: $primary_font_family;
+	font-size: 100%;
+	font-style: inherit;
+	font-weight: inherit;
+	margin: 0;
+	outline: 0;
+	padding: 0;
+	vertical-align: baseline;
+	quotes: "" "";
+	&:before {
+		content: "";
+	}
+	&:after {
+		content: "";
+	}
+}
+
+s {
+	border: 0;
+	font-family: $primary_font_family;
+	font-size: 100%;
+	font-style: inherit;
+	font-weight: inherit;
+	margin: 0;
+	outline: 0;
+	padding: 0;
+	vertical-align: baseline;
+}
+
+samp {
+	border: 0;
+	font-family: $primary_font_family;
+	font-size: 100%;
+	font-style: inherit;
+	font-weight: inherit;
+	margin: 0;
+	outline: 0;
+	padding: 0;
+	vertical-align: baseline;
+}
+
+small {
+	border: 0;
+	font-family: $primary_font_family;
+	font-size: 100%;
+	font-style: inherit;
+	font-weight: inherit;
+	margin: 0;
+	outline: 0;
+	padding: 0;
+	vertical-align: baseline;
+	font-size: 75%;
+}
+
+strike {
+	border: 0;
+	font-family: $primary_font_family;
+	font-size: 100%;
+	font-style: inherit;
+	font-weight: inherit;
+	margin: 0;
+	outline: 0;
+	padding: 0;
+	vertical-align: baseline;
+}
+
+strong {
+	border: 0;
+	font-family: $primary_font_family;
+	font-size: 100%;
+	font-style: inherit;
+	font-weight: inherit;
+	margin: 0;
+	outline: 0;
+	padding: 0;
+	vertical-align: baseline;
+	font-weight: bold;
+}
+
+sub {
+	border: 0;
+	font-family: $primary_font_family;
+	font-size: 100%;
+	font-style: inherit;
+	font-weight: inherit;
+	margin: 0;
+	outline: 0;
+	padding: 0;
+	vertical-align: baseline;
+	font-size: 75%;
+	height: 0;
+	line-height: 0;
+	position: relative;
+	vertical-align: baseline;
+	top: .5ex;
+}
+
+sup {
+	border: 0;
+	font-family: $primary_font_family;
+	font-size: 100%;
+	font-style: inherit;
+	font-weight: inherit;
+	margin: 0;
+	outline: 0;
+	padding: 0;
+	vertical-align: baseline;
+	font-size: 75%;
+	height: 0;
+	line-height: 0;
+	position: relative;
+	vertical-align: baseline;
+	bottom: 1ex;
+}
+
+tt {
+	border: 0;
+	font-family: $primary_font_family;
+	font-size: 100%;
+	font-style: inherit;
+	font-weight: inherit;
+	margin: 0;
+	outline: 0;
+	padding: 0;
+	vertical-align: baseline;
+	font: 15px Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
+}
+
+var {
+	border: 0;
+	font-family: $primary_font_family;
+	font-size: 100%;
+	font-style: inherit;
+	font-weight: inherit;
+	margin: 0;
+	outline: 0;
+	padding: 0;
+	vertical-align: baseline;
+	font: 15px Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
+}
+
+dl {
+	border: 0;
+	font-family: $primary_font_family;
+	font-size: 100%;
+	font-style: inherit;
+	font-weight: inherit;
+	margin: 0;
+	outline: 0;
+	padding: 0;
+	vertical-align: baseline;
+}
+
+dt {
+	border: 0;
+	font-family: $primary_font_family;
+	font-size: 100%;
+	font-style: inherit;
+	font-weight: inherit;
+	margin: 0;
+	outline: 0;
+	padding: 0;
+	vertical-align: baseline;
+	font-weight: bold;
+}
+
+dd {
+	border: 0;
+	font-family: $primary_font_family;
+	font-size: 100%;
+	font-style: inherit;
+	font-weight: inherit;
+	margin: 0;
+	outline: 0;
+	padding: 0;
+	vertical-align: baseline;
+	margin: 0 15px 15px;
+}
+
+ol {
+	border: 0;
+	font-family: $primary_font_family;
+	font-size: 100%;
+	font-style: inherit;
+	font-weight: inherit;
+	margin: 0;
+	outline: 0;
+	padding: 0;
+	vertical-align: baseline;
+	list-style: none;
+	margin: 0 0 15px 20px;
+	list-style: decimal;
+}
+
+ul {
+	border: 0;
+	font-family: $primary_font_family;
+	font-size: 100%;
+	font-style: inherit;
+	font-weight: inherit;
+	margin: 0;
+	outline: 0;
+	padding: 0;
+	vertical-align: baseline;
+	list-style: none;
+	margin: 0 0 15px 20px;
+	list-style: disc;
+}
+
+li {
+	border: 0;
+	font-family: $primary_font_family;
+	font-size: 100%;
+	font-style: inherit;
+	font-weight: inherit;
+	margin: 0;
+	outline: 0;
+	padding: 0;
+	vertical-align: baseline;
+	> ul {
+		margin-bottom: 0;
+		margin-left: 15px;
+	}
+	> ol {
+		margin-bottom: 0;
+		margin-left: 15px;
+	}
+}
+
+fieldset {
+	border: 0;
+	font-family: $primary_font_family;
+	font-size: 100%;
+	font-style: inherit;
+	font-weight: inherit;
+	margin: 0;
+	outline: 0;
+	padding: 0;
+	vertical-align: baseline;
+}
+
+form {
+	border: 0;
+	font-family: $primary_font_family;
+	font-size: 100%;
+	font-style: inherit;
+	font-weight: inherit;
+	margin: 0;
+	outline: 0;
+	padding: 0;
+	vertical-align: baseline;
+}
+
+label {
+	border: 0;
+	font-family: $primary_font_family;
+	font-size: 100%;
+	font-style: inherit;
+	font-weight: inherit;
+	margin: 0;
+	outline: 0;
+	padding: 0;
+	vertical-align: baseline;
+}
+
+legend {
+	border: 0;
+	font-family: $primary_font_family;
+	font-size: 100%;
+	font-style: inherit;
+	font-weight: inherit;
+	margin: 0;
+	outline: 0;
+	padding: 0;
+	vertical-align: baseline;
+}
+
+table {
+	border: 0;
+	font-family: $primary_font_family;
+	font-size: 100%;
+	font-style: inherit;
+	font-weight: inherit;
+	margin: 0;
+	outline: 0;
+	padding: 0;
+	vertical-align: baseline;
+	border-collapse: separate;
+	border-spacing: 0;
+	margin: 0 0 15px;
+	width: 100%;
+	border-collapse: collapse;
+}
+
+caption {
+	border: 0;
+	font-family: $primary_font_family;
+	font-size: 100%;
+	font-style: inherit;
+	font-weight: inherit;
+	margin: 0;
+	outline: 0;
+	padding: 0;
+	vertical-align: baseline;
+	font-weight: normal;
+	text-align: left;
+}
+
+tbody {
+	border: 0;
+	font-family: $primary_font_family;
+	font-size: 100%;
+	font-style: inherit;
+	font-weight: inherit;
+	margin: 0;
+	outline: 0;
+	padding: 0;
+	vertical-align: baseline;
+}
+
+tfoot {
+	border: 0;
+	font-family: $primary_font_family;
+	font-size: 100%;
+	font-style: inherit;
+	font-weight: inherit;
+	margin: 0;
+	outline: 0;
+	padding: 0;
+	vertical-align: baseline;
+}
+
+thead {
+	border: 0;
+	font-family: $primary_font_family;
+	font-size: 100%;
+	font-style: inherit;
+	font-weight: inherit;
+	margin: 0;
+	outline: 0;
+	padding: 0;
+	vertical-align: baseline;
+}
+
+tr {
+	border: 0;
+	font-family: $primary_font_family;
+	font-size: 100%;
+	font-style: inherit;
+	font-weight: inherit;
+	margin: 0;
+	outline: 0;
+	padding: 0;
+	vertical-align: baseline;
+}
+
+th {
+	border: 0;
+	font-family: $primary_font_family;
+	font-size: 100%;
+	font-style: inherit;
+	font-weight: inherit;
+	margin: 0;
+	outline: 0;
+	padding: 0;
+	vertical-align: baseline;
+	font-weight: normal;
+	text-align: left;
+	font-weight: bold;
+	border: 1px solid #CCC;
+	padding: 5px 10px;
+}
+
+td {
+	border: 0;
+	font-family: $primary_font_family;
+	font-size: 100%;
+	font-style: inherit;
+	font-weight: inherit;
+	margin: 0;
+	outline: 0;
+	padding: 0;
+	vertical-align: baseline;
+	font-weight: normal;
+	text-align: left;
+	border: 1px solid #CCC;
+	padding: 5px 10px;
+}
+
+* {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	&:before {
+		-webkit-box-sizing: border-box;
+		-moz-box-sizing: border-box;
+		box-sizing: border-box;
+	}
+	&:after {
+		-webkit-box-sizing: border-box;
+		-moz-box-sizing: border-box;
+		box-sizing: border-box;
+	}
+}
+
+article {
+	display: block;
+}
+
+aside {
+	display: block;
+}
+
+details {
+	display: block;
+}
+
+figcaption {
+	display: block;
+}
+
+figure {
+	display: block;
+	margin: 0;
+}
+
+footer {
+	display: block;
+}
+
+header {
+	display: block;
+}
+
+main {
+	display: block;
+}
+
+nav {
+	display: block;
+}
+
+section {
+	display: block;
+}
+
+button {
+	color: $color_1;
+	font-family: $title_font_family;
+	font-size: 14px;
+	line-height: 1.8;
+	font-weight: 400;
+	font-size: 100%;
+	margin: 0;
+	vertical-align: middle;
+	background: $primary_color;
+	color: $color_2;
+	cursor: pointer;
+	font-size: 14px;
+	line-height: 13px;
+	height: 33px;
+	border: none;
+	padding: 10px 15px;
+	font-weight: 400;
+	display: inline-block;
+	position: relative;
+	text-shadow: none;
+	border: 1px solid $primary_color;
+	background: $primary_color;
+	color: $color_2 !important;
+	&::-moz-focus-inner {
+		border: 0;
+		padding: 0;
+	}
+}
+
+input {
+	color: $color_1;
+	font-family: $title_font_family;
+	font-size: 14px;
+	line-height: 1.8;
+	font-weight: 400;
+	font-size: 100%;
+	margin: 0;
+	vertical-align: middle;
+	&::-moz-focus-inner {
+		border: 0;
+		padding: 0;
+	}
+}
+
+select {
+	color: $color_1;
+	font-family: $title_font_family;
+	font-size: 14px;
+	line-height: 1.8;
+	font-weight: 400;
+	font-size: 100%;
+	margin: 0;
+	vertical-align: middle;
+}
+
+textarea {
+	color: $color_1;
+	font-family: $title_font_family;
+	font-size: 14px;
+	line-height: 1.8;
+	font-weight: 400;
+	font-size: 100%;
+	margin: 0;
+	vertical-align: middle;
+	overflow: auto;
+	padding-left: 3px;
+	vertical-align: top;
+	color: $color_3;
+	border: 1px solid #ccc;
+	height: 160px;
+	max-width: 100%;
+	width: 100%;
+	&:focus {
+		border: 1px solid #AAA;
+	}
+}
+
+b {
+	font-weight: bold;
+}
+
+i {
+	font-style: italic;
+}
+
+mark {
+	background: #fff9c0;
+	text-decoration: none;
+}
+
+hr {
+	background-color: $background_color_1;
+	border: 0;
+	height: 1px;
+	margin-bottom: 15px;
+}
+
+img {
+	height: auto;
+	max-width: 100%;
+	vertical-align: middle;
+}
