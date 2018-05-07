@@ -8,7 +8,7 @@
  * or theme author for support.
  *
  * @package   TGM-Plugin-Activation
- * @version   2.6.1
+ * @version   2.6.1 for parent theme Eggnews for publication on WordPress.org
  * @link      http://tgmpluginactivation.com/
  * @author    Thomas Griffin, Gary Jones, Juliette Reinders Folmer
  * @copyright Copyright (c) 2011, Thomas Griffin
@@ -259,14 +259,7 @@ if ( ! class_exists( 'TGM_Plugin_Activation' ) ) {
 			// Announce that the class is ready, and pass the object (for advanced use).
 			do_action_ref_array( 'tgmpa_init', array( $this ) );
 
-			/*
-			 * Load our text domain and allow for overloading the fall-back file.
-			 *
-			 * {@internal IMPORTANT! If this code changes, review the regex in the custom TGMPA
-			 * generator on the website.}}
-			 */
-			add_action( 'init', array( $this, 'load_textdomain' ), 5 );
-			add_filter( 'load_textdomain_mofile', array( $this, 'overload_textdomain_mofile' ), 10, 2 );
+
 
 			// When the rest of WP has loaded, kick-start the rest of the class.
 			add_action( 'init', array( $this, 'init' ) );
@@ -331,13 +324,13 @@ if ( ! class_exists( 'TGM_Plugin_Activation' ) ) {
 
 			// Load class strings.
 			$this->strings = array(
-				'page_title'                      => __( 'Install Required Plugins', 'education-master' ),
-				'menu_title'                      => __( 'Install Plugins', 'education-master' ),
+				'page_title'                      => esc_html__( 'Install Recommended Plugins', 'education-master' ),
+				'menu_title'                      => esc_html__( 'Install Plugins', 'education-master' ),
 				/* translators: %s: plugin name. */
-				'installing'                      => __( 'Installing Plugin: %s', 'education-master' ),
+				'installing'                      => esc_html__( 'Installing Plugin: %s', 'education-master' ),
 				/* translators: %s: plugin name. */
-				'updating'                        => __( 'Updating Plugin: %s', 'education-master' ),
-				'oops'                            => __( 'Something went wrong with the plugin API.', 'education-master' ),
+				'updating'                        => esc_html__( 'Updating Plugin: %s', 'education-master' ),
+				'oops'                            => esc_html__( 'Something went wrong with the plugin API.', 'education-master' ),
 				'notice_can_install_required'     => _n_noop(
 					/* translators: 1: plugin name(s). */
 					'This theme requires the following plugin: %1$s.',
@@ -389,19 +382,19 @@ if ( ! class_exists( 'TGM_Plugin_Activation' ) ) {
 					'Begin activating plugins',
 					'education-master'
 				),
-				'return'                          => __( 'Return to Required Plugins Installer', 'education-master' ),
-				'dashboard'                       => __( 'Return to the Dashboard', 'education-master' ),
-				'plugin_activated'                => __( 'Plugin activated successfully.', 'education-master' ),
-				'activated_successfully'          => __( 'The following plugin was activated successfully:', 'education-master' ),
+				'return'                          => esc_html__( 'Return to Recommended Plugins Installer', 'education-master' ),
+				'dashboard'                       => esc_html__( 'Return to the Dashboard', 'education-master' ),
+				'plugin_activated'                => esc_html__( 'Plugin activated successfully.', 'education-master' ),
+				'activated_successfully'          => esc_html__( 'The following plugin was activated successfully:', 'education-master' ),
 				/* translators: 1: plugin name. */
-				'plugin_already_active'           => __( 'No action taken. Plugin %1$s was already active.', 'education-master' ),
+				'plugin_already_active'           => esc_html__( 'No action taken. Plugin %1$s was already active.', 'education-master' ),
 				/* translators: 1: plugin name. */
-				'plugin_needs_higher_version'     => __( 'Plugin not activated. A higher version of %s is needed for this theme. Please update the plugin.', 'education-master' ),
+				'plugin_needs_higher_version'     => esc_html__( 'Plugin not activated. A higher version of %s is needed for this theme. Please update the plugin.', 'education-master' ),
 				/* translators: 1: dashboard link. */
-				'complete'                        => __( 'All plugins installed and activated successfully. %1$s', 'education-master' ),
-				'dismiss'                         => __( 'Dismiss this notice', 'education-master' ),
-				'notice_cannot_install_activate'  => __( 'There are one or more required or recommended plugins to install, update or activate.', 'education-master' ),
-				'contact_admin'                   => __( 'Please contact the administrator of this site for help.', 'education-master' ),
+				'complete'                        => esc_html__( 'All plugins installed and activated successfully. %1$s', 'education-master' ),
+				'dismiss'                         => esc_html__( 'Dismiss this notice', 'education-master' ),
+				'notice_cannot_install_activate'  => esc_html__( 'There are one or more required or recommended plugins to install, update or activate.', 'education-master' ),
+				'contact_admin'                   => esc_html__( 'Please contact the administrator of this site for help.', 'education-master' ),
 			);
 
 			do_action( 'tgmpa_register' );
@@ -453,89 +446,11 @@ if ( ! class_exists( 'TGM_Plugin_Activation' ) ) {
 			}
 		}
 
-		/**
-		 * Load translations.
-		 *
-		 * @since 2.6.0
-		 *
-		 * (@internal Uses `load_theme_textdomain()` rather than `load_plugin_textdomain()` to
-		 * get round the different ways of handling the path and deprecated notices being thrown
-		 * and such. For plugins, the actual file name will be corrected by a filter.}}
-		 *
-		 * {@internal IMPORTANT! If this function changes, review the regex in the custom TGMPA
-		 * generator on the website.}}
-		 */
-		public function load_textdomain() {
-			if ( is_textdomain_loaded( 'tgmpa' ) ) {
-				return;
-			}
 
-			if ( false !== strpos( __FILE__, WP_PLUGIN_DIR ) || false !== strpos( __FILE__, WPMU_PLUGIN_DIR ) ) {
-				// Plugin, we'll need to adjust the file name.
-				add_action( 'load_textdomain_mofile', array( $this, 'correct_plugin_mofile' ), 10, 2 );
-				load_theme_textdomain( 'tgmpa', dirname( __FILE__ ) . '/languages' );
-				remove_action( 'load_textdomain_mofile', array( $this, 'correct_plugin_mofile' ), 10 );
-			} else {
-				load_theme_textdomain( 'tgmpa', dirname( __FILE__ ) . '/languages' );
-			}
-		}
 
-		/**
-		 * Correct the .mo file name for (must-use) plugins.
-		 *
-		 * Themese use `/path/{locale}.mo` while plugins use `/path/{text-domain}-{locale}.mo`.
-		 *
-		 * {@internal IMPORTANT! If this function changes, review the regex in the custom TGMPA
-		 * generator on the website.}}
-		 *
-		 * @since 2.6.0
-		 *
-		 * @param string $mofile Full path to the target mofile.
-		 * @param string $domain The domain for which a language file is being loaded.
-		 * @return string $mofile
-		 */
-		public function correct_plugin_mofile( $mofile, $domain ) {
-			// Exit early if not our domain (just in case).
-			if ( 'tgmpa' !== $domain ) {
-				return $mofile;
-			}
-			return preg_replace( '`/([a-z]{2}_[A-Z]{2}.mo)$`', '/tgmpa-$1', $mofile );
-		}
 
-		/**
-		 * Potentially overload the fall-back translation file for the current language.
-		 *
-		 * WP, by default since WP 3.7, will load a local translation first and if none
-		 * can be found, will try and find a translation in the /wp-content/languages/ directory.
-		 * As this library is theme/plugin agnostic, translation files for TGMPA can exist both
-		 * in the WP_LANG_DIR /plugins/ subdirectory as well as in the /themes/ subdirectory.
-		 *
-		 * This method makes sure both directories are checked.
-		 *
-		 * {@internal IMPORTANT! If this function changes, review the regex in the custom TGMPA
-		 * generator on the website.}}
-		 *
-		 * @since 2.6.0
-		 *
-		 * @param string $mofile Full path to the target mofile.
-		 * @param string $domain The domain for which a language file is being loaded.
-		 * @return string $mofile
-		 */
-		public function overload_textdomain_mofile( $mofile, $domain ) {
-			// Exit early if not our domain, not a WP_LANG_DIR load or if the file exists and is readable.
-			if ( 'tgmpa' !== $domain || false === strpos( $mofile, WP_LANG_DIR ) || @is_readable( $mofile ) ) {
-				return $mofile;
-			}
 
-			// Current fallback file is not valid, let's try the alternative option.
-			if ( false !== strpos( $mofile, '/themes/' ) ) {
-				return str_replace( '/themes/', '/plugins/', $mofile );
-			} elseif ( false !== strpos( $mofile, '/plugins/' ) ) {
-				return str_replace( '/plugins/', '/themes/', $mofile );
-			} else {
-				return $mofile;
-			}
-		}
+
 
 		/**
 		 * Hook in plugin action link filters for the WP native plugins page.
@@ -604,7 +519,7 @@ if ( ! class_exists( 'TGM_Plugin_Activation' ) ) {
 			$actions['update'] = sprintf(
 				'<a href="%1$s" title="%2$s" class="edit">%3$s</a>',
 				esc_url( $this->get_tgmpa_status_url( 'update' ) ),
-				esc_attr__( 'This plugin needs to be updated to be compatible with your theme.', 'education-master' ),
+				esc_attresc_html__( 'This plugin needs to be updated to be compatible with your theme.', 'education-master' ),
 				esc_html__( 'Update Required', 'education-master' )
 			);
 
@@ -721,12 +636,7 @@ if ( ! class_exists( 'TGM_Plugin_Activation' ) ) {
 		 * @param array $args Menu item configuration.
 		 */
 		protected function add_admin_menu( array $args ) {
-			if ( has_filter( 'tgmpa_admin_menu_use_add_theme_page' ) ) {
-				_deprecated_function( 'The "tgmpa_admin_menu_use_add_theme_page" filter', '2.5.0', esc_html__( 'Set the parent_slug config variable instead.', 'education-master' ) );
-			}
-
-			$this->page_hook = call_user_func( 'add_theme_page', $args['page_title'], $args['menu_title'], $args['capability'], $args['menu_slug'], $args['function'] );
-
+			$this->page_hook = add_theme_page( $args['page_title'], $args['menu_title'], $args['capability'], $args['menu_slug'], $args['function'] );
 		}
 
 		/**
@@ -1261,14 +1171,14 @@ if ( ! class_exists( 'TGM_Plugin_Activation' ) ) {
 				if ( $install_count > 0 ) {
 					$action_links['install'] = sprintf(
 						$link_template,
-						translate_nooped_plural( $this->strings['install_link'], $install_count, 'tgmpa' ),
+						translate_nooped_plural( $this->strings['install_link'], $install_count, 'education-master' ),
 						esc_url( $this->get_tgmpa_status_url( 'install' ) )
 					);
 				}
 				if ( $update_count > 0 ) {
 					$action_links['update'] = sprintf(
 						$link_template,
-						translate_nooped_plural( $this->strings['update_link'], $update_count, 'tgmpa' ),
+						translate_nooped_plural( $this->strings['update_link'], $update_count, 'education-master' ),
 						esc_url( $this->get_tgmpa_status_url( 'update' ) )
 					);
 				}
@@ -1277,7 +1187,7 @@ if ( ! class_exists( 'TGM_Plugin_Activation' ) ) {
 			if ( current_user_can( 'activate_plugins' ) && $activate_count > 0 ) {
 				$action_links['activate'] = sprintf(
 					$link_template,
-					translate_nooped_plural( $this->strings['activate_link'], $activate_count, 'tgmpa' ),
+					translate_nooped_plural( $this->strings['activate_link'], $activate_count, 'education-master' ),
 					esc_url( $this->get_tgmpa_status_url( 'activate' ) )
 				);
 			}
@@ -2069,7 +1979,7 @@ if ( ! class_exists( 'TGM_Plugin_Activation' ) ) {
 				esc_html(
 					sprintf(
 						/* translators: %s: version number */
-						__( 'TGMPA v%s', 'education-master' ),
+						esc_html__( 'TGMPA v%s', 'education-master' ),
 						self::TGMPA_VERSION
 					)
 				),
@@ -2360,10 +2270,10 @@ if ( ! class_exists( 'TGMPA_List_Table' ) ) {
 		 */
 		protected function get_plugin_advise_type_text( $required ) {
 			if ( true === $required ) {
-				return __( 'Required', 'education-master' );
+				return esc_html__( 'Required', 'education-master' );
 			}
 
-			return __( 'Recommended', 'education-master' );
+			return esc_html__( 'Recommended', 'education-master' );
 		}
 
 		/**
@@ -2379,13 +2289,13 @@ if ( ! class_exists( 'TGMPA_List_Table' ) ) {
 
 			switch ( $type ) {
 				case 'repo':
-					$string = __( 'WordPress Repository', 'education-master' );
+					$string = esc_html__( 'WordPress Repository', 'education-master' );
 					break;
 				case 'external':
-					$string = __( 'External Source', 'education-master' );
+					$string = esc_html__( 'External Source', 'education-master' );
 					break;
 				case 'bundled':
-					$string = __( 'Pre-Packaged', 'education-master' );
+					$string = esc_html__( 'Pre-Packaged', 'education-master' );
 					break;
 			}
 
@@ -2402,25 +2312,25 @@ if ( ! class_exists( 'TGMPA_List_Table' ) ) {
 		 */
 		protected function get_plugin_status_text( $slug ) {
 			if ( ! $this->tgmpa->is_plugin_installed( $slug ) ) {
-				return __( 'Not Installed', 'education-master' );
+				return esc_html__( 'Not Installed', 'education-master' );
 			}
 
 			if ( ! $this->tgmpa->is_plugin_active( $slug ) ) {
-				$install_status = __( 'Installed But Not Activated', 'education-master' );
+				$install_status = esc_html__( 'Installed But Not Activated', 'education-master' );
 			} else {
-				$install_status = __( 'Active', 'education-master' );
+				$install_status = esc_html__( 'Active', 'education-master' );
 			}
 
 			$update_status = '';
 
 			if ( $this->tgmpa->does_plugin_require_update( $slug ) && false === $this->tgmpa->does_plugin_have_update( $slug ) ) {
-				$update_status = __( 'Required Update not Available', 'education-master' );
+				$update_status = esc_html__( 'Required Update not Available', 'education-master' );
 
 			} elseif ( $this->tgmpa->does_plugin_require_update( $slug ) ) {
-				$update_status = __( 'Requires Update', 'education-master' );
+				$update_status = esc_html__( 'Requires Update', 'education-master' );
 
 			} elseif ( false !== $this->tgmpa->does_plugin_have_update( $slug ) ) {
-				$update_status = __( 'Update recommended', 'education-master' );
+				$update_status = esc_html__( 'Update recommended', 'education-master' );
 			}
 
 			if ( '' === $update_status ) {
@@ -2577,7 +2487,7 @@ if ( ! class_exists( 'TGMPA_List_Table' ) ) {
 				}
 
 				$output[] = sprintf(
-					'<p><span style="min-width: 32px; text-align: right; float: right;%1$s">%2$s</span>' . __( 'Installed version:', 'education-master' ) . '</p>',
+					'<p><span style="min-width: 32px; text-align: right; float: right;%1$s">%2$s</span>' . esc_html__( 'Installed version:', 'education-master' ) . '</p>',
 					$color,
 					$installed
 				);
@@ -2585,7 +2495,7 @@ if ( ! class_exists( 'TGMPA_List_Table' ) ) {
 
 			if ( ! empty( $item['minimum_version'] ) ) {
 				$output[] = sprintf(
-					'<p><span style="min-width: 32px; text-align: right; float: right;">%1$s</span>' . __( 'Minimum required version:', 'education-master' ) . '</p>',
+					'<p><span style="min-width: 32px; text-align: right; float: right;">%1$s</span>' . esc_html__( 'Minimum required version:', 'education-master' ) . '</p>',
 					$item['minimum_version']
 				);
 			}
@@ -2597,7 +2507,7 @@ if ( ! class_exists( 'TGMPA_List_Table' ) ) {
 				}
 
 				$output[] = sprintf(
-					'<p><span style="min-width: 32px; text-align: right; float: right;%1$s">%2$s</span>' . __( 'Available version:', 'education-master' ) . '</p>',
+					'<p><span style="min-width: 32px; text-align: right; float: right;%1$s">%2$s</span>' . esc_html__( 'Available version:', 'education-master' ) . '</p>',
 					$color,
 					$item['available_version']
 				);
@@ -2634,14 +2544,14 @@ if ( ! class_exists( 'TGMPA_List_Table' ) ) {
 		public function get_columns() {
 			$columns = array(
 				'cb'     => '<input type="checkbox" />',
-				'plugin' => __( 'Plugin', 'education-master' ),
-				'source' => __( 'Source', 'education-master' ),
-				'type'   => __( 'Type', 'education-master' ),
+				'plugin' => esc_html__( 'Plugin', 'education-master' ),
+				'source' => esc_html__( 'Source', 'education-master' ),
+				'type'   => esc_html__( 'Type', 'education-master' ),
 			);
 
 			if ( 'all' === $this->view_context || 'update' === $this->view_context ) {
-				$columns['version'] = __( 'Version', 'education-master' );
-				$columns['status']  = __( 'Status', 'education-master' );
+				$columns['version'] = esc_html__( 'Version', 'education-master' );
+				$columns['status']  = esc_html__( 'Status', 'education-master' );
 			}
 
 			return apply_filters( 'tgmpa_table_columns', $columns );
@@ -2690,18 +2600,18 @@ if ( ! class_exists( 'TGMPA_List_Table' ) ) {
 			// Display the 'Install' action link if the plugin is not yet available.
 			if ( ! $this->tgmpa->is_plugin_installed( $item['slug'] ) ) {
 				/* translators: %2$s: plugin name in screen reader markup */
-				$actions['install'] = __( 'Install %2$s', 'education-master' );
+				$actions['install'] = esc_html__( 'Install %2$s', 'education-master' );
 			} else {
 				// Display the 'Update' action link if an update is available and WP complies with plugin minimum.
 				if ( false !== $this->tgmpa->does_plugin_have_update( $item['slug'] ) && $this->tgmpa->can_plugin_update( $item['slug'] ) ) {
 					/* translators: %2$s: plugin name in screen reader markup */
-					$actions['update'] = __( 'Update %2$s', 'education-master' );
+					$actions['update'] = esc_html__( 'Update %2$s', 'education-master' );
 				}
 
 				// Display the 'Activate' action link, but only if the plugin meets the minimum version.
 				if ( $this->tgmpa->can_plugin_activate( $item['slug'] ) ) {
 					/* translators: %2$s: plugin name in screen reader markup */
-					$actions['activate'] = __( 'Activate %2$s', 'education-master' );
+					$actions['activate'] = esc_html__( 'Activate %2$s', 'education-master' );
 				}
 			}
 
@@ -2804,16 +2714,16 @@ if ( ! class_exists( 'TGMPA_List_Table' ) ) {
 
 			if ( 'update' !== $this->view_context && 'activate' !== $this->view_context ) {
 				if ( current_user_can( 'install_plugins' ) ) {
-					$actions['tgmpa-bulk-install'] = __( 'Install', 'education-master' );
+					$actions['tgmpa-bulk-install'] = esc_html__( 'Install', 'education-master' );
 				}
 			}
 
 			if ( 'install' !== $this->view_context ) {
 				if ( current_user_can( 'update_plugins' ) ) {
-					$actions['tgmpa-bulk-update'] = __( 'Update', 'education-master' );
+					$actions['tgmpa-bulk-update'] = esc_html__( 'Update', 'education-master' );
 				}
 				if ( current_user_can( 'activate_plugins' ) ) {
-					$actions['tgmpa-bulk-activate'] = __( 'Activate', 'education-master' );
+					$actions['tgmpa-bulk-activate'] = esc_html__( 'Activate', 'education-master' );
 				}
 			}
 
@@ -2844,9 +2754,9 @@ if ( ! class_exists( 'TGMPA_List_Table' ) ) {
 				// Did user actually select any plugins to install/update ?
 				if ( empty( $_POST['plugin'] ) ) {
 					if ( 'install' === $install_type ) {
-						$message = __( 'No plugins were selected to be installed. No action taken.', 'education-master' );
+						$message = esc_html__( 'No plugins were selected to be installed. No action taken.', 'education-master' );
 					} else {
-						$message = __( 'No plugins were selected to be updated. No action taken.', 'education-master' );
+						$message = esc_html__( 'No plugins were selected to be updated. No action taken.', 'education-master' );
 					}
 
 					echo '<div id="message" class="error"><p>', esc_html( $message ), '</p></div>';
@@ -2887,9 +2797,9 @@ if ( ! class_exists( 'TGMPA_List_Table' ) ) {
 				// No need to proceed further if we have no plugins to handle.
 				if ( empty( $plugins_to_install ) ) {
 					if ( 'install' === $install_type ) {
-						$message = __( 'No plugins are available to be installed at this time.', 'education-master' );
+						$message = esc_html__( 'No plugins are available to be installed at this time.', 'education-master' );
 					} else {
-						$message = __( 'No plugins are available to be updated at this time.', 'education-master' );
+						$message = esc_html__( 'No plugins are available to be updated at this time.', 'education-master' );
 					}
 
 					echo '<div id="message" class="error"><p>', esc_html( $message ), '</p></div>';
@@ -3245,8 +3155,8 @@ if ( ! function_exists( 'tgmpa_load_bulk_installer' ) ) {
 					 * @since 2.2.0
 					 */
 					public function activate_strings() {
-						$this->strings['activation_failed']  = __( 'Plugin activation failed.', 'education-master' );
-						$this->strings['activation_success'] = __( 'Plugin activated successfully.', 'education-master' );
+						$this->strings['activation_failed']  = esc_html__( 'Plugin activation failed.', 'education-master' );
+						$this->strings['activation_success'] = esc_html__( 'Plugin activated successfully.', 'education-master' );
 					}
 
 					/**
@@ -3585,29 +3495,29 @@ if ( ! function_exists( 'tgmpa_load_bulk_installer' ) ) {
 						if ( 'update' === $this->options['install_type'] ) {
 							parent::add_strings();
 							/* translators: 1: plugin name, 2: action number 3: total number of actions. */
-							$this->upgrader->strings['skin_before_update_header'] = __( 'Updating Plugin %1$s (%2$d/%3$d)', 'education-master' );
+							$this->upgrader->strings['skin_before_update_header'] = esc_html__( 'Updating Plugin %1$s (%2$d/%3$d)', 'education-master' );
 						} else {
 							/* translators: 1: plugin name, 2: error message. */
-							$this->upgrader->strings['skin_update_failed_error'] = __( 'An error occurred while installing %1$s: <strong>%2$s</strong>.', 'education-master' );
+							$this->upgrader->strings['skin_update_failed_error'] = esc_html__( 'An error occurred while installing %1$s: <strong>%2$s</strong>.', 'education-master' );
 							/* translators: 1: plugin name. */
-							$this->upgrader->strings['skin_update_failed'] = __( 'The installation of %1$s failed.', 'education-master' );
+							$this->upgrader->strings['skin_update_failed'] = esc_html__( 'The installation of %1$s failed.', 'education-master' );
 
 							if ( $this->tgmpa->is_automatic ) {
 								// Automatic activation strings.
-								$this->upgrader->strings['skin_upgrade_start'] = __( 'The installation and activation process is starting. This process may take a while on some hosts, so please be patient.', 'education-master' );
+								$this->upgrader->strings['skin_upgrade_start'] = esc_html__( 'The installation and activation process is starting. This process may take a while on some hosts, so please be patient.', 'education-master' );
 								/* translators: 1: plugin name. */
-								$this->upgrader->strings['skin_update_successful'] = __( '%1$s installed and activated successfully.', 'education-master' ) . ' <a href="#" class="hide-if-no-js" onclick="%2$s"><span>' . esc_html__( 'Show Details', 'education-master' ) . '</span><span class="hidden">' . esc_html__( 'Hide Details', 'education-master' ) . '</span>.</a>';
-								$this->upgrader->strings['skin_upgrade_end']       = __( 'All installations and activations have been completed.', 'education-master' );
+								$this->upgrader->strings['skin_update_successful'] = esc_html__( '%1$s installed and activated successfully.', 'education-master' ) . ' <a href="#" class="hide-if-no-js" onclick="%2$s"><span>' . esc_html__( 'Show Details', 'education-master' ) . '</span><span class="hidden">' . esc_html__( 'Hide Details', 'education-master' ) . '</span>.</a>';
+								$this->upgrader->strings['skin_upgrade_end']       = esc_html__( 'All installations and activations have been completed.', 'education-master' );
 								/* translators: 1: plugin name, 2: action number 3: total number of actions. */
-								$this->upgrader->strings['skin_before_update_header'] = __( 'Installing and Activating Plugin %1$s (%2$d/%3$d)', 'education-master' );
+								$this->upgrader->strings['skin_before_update_header'] = esc_html__( 'Installing and Activating Plugin %1$s (%2$d/%3$d)', 'education-master' );
 							} else {
 								// Default installation strings.
-								$this->upgrader->strings['skin_upgrade_start'] = __( 'The installation process is starting. This process may take a while on some hosts, so please be patient.', 'education-master' );
+								$this->upgrader->strings['skin_upgrade_start'] = esc_html__( 'The installation process is starting. This process may take a while on some hosts, so please be patient.', 'education-master' );
 								/* translators: 1: plugin name. */
 								$this->upgrader->strings['skin_update_successful'] = esc_html__( '%1$s installed successfully.', 'education-master' ) . ' <a href="#" class="hide-if-no-js" onclick="%2$s"><span>' . esc_html__( 'Show Details', 'education-master' ) . '</span><span class="hidden">' . esc_html__( 'Hide Details', 'education-master' ) . '</span>.</a>';
-								$this->upgrader->strings['skin_upgrade_end']       = __( 'All installations have been completed.', 'education-master' );
+								$this->upgrader->strings['skin_upgrade_end']       = esc_html__( 'All installations have been completed.', 'education-master' );
 								/* translators: 1: plugin name, 2: action number 3: total number of actions. */
-								$this->upgrader->strings['skin_before_update_header'] = __( 'Installing Plugin %1$s (%2$d/%3$d)', 'education-master' );
+								$this->upgrader->strings['skin_before_update_header'] = esc_html__( 'Installing Plugin %1$s (%2$d/%3$d)', 'education-master' );
 							}
 						}
 					}
