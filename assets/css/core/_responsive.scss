@@ -30,6 +30,11 @@
 		}
 
 	}
+	#main-slider h3 a {
+		color: #fff;
+		font-size: 25px;
+	}
+
 }
 
 @media screen and (max-device-width: 380px) {
@@ -58,5 +63,55 @@
 			}
 
 		}
+	}
+}
+
+@media (max-width: 1200px) and (min-width: 768px) {
+	body {
+		.site-header.default {
+			.edm-header-menu-wrapper {
+				.site-branding {
+					width: 25%;
+					margin: 0;
+					float: left;
+					overflow: hidden;
+				}
+				.edm-navigation {
+
+					margin: 0;
+					width: 75%;
+					float: left;
+					margin-left: 25%;
+
+				}
+			}
+
+		}
+
+	}
+}
+
+@media (max-width: 1200px) {
+
+	.edm-service-container .edm-single-service {
+		margin-top: 0;
+	}
+	#main-slider .cycle-caption.caption-alignment-center {
+		bottom: 20px;
+		left: 0;
+		right: 0;
+		margin: 0 auto;
+	}
+	#main-slider p {
+		font-size: 16px;
+		margin-bottom: 0;
+		line-height: 22px;
+	}
+}
+
+@media (max-width: 480px) {
+
+	.slider-buttons {
+		display: none;
 	}
 }

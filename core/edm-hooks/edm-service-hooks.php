@@ -37,7 +37,7 @@ if ( ! function_exists( 'education_master_service_section' ) ) :
 								</div> <!-- align icons -->
 								<div class="service-content">
 									<h3 class="service-title"><a
-											href="<?php get_permalink( $post->ID ) ?>"><?php echo esc_html( $post->post_title ); ?></a>
+											href="<?php echo get_permalink( $post->ID ) ?>"><?php echo esc_html( $post->post_title ); ?></a>
 									</h3>
 									<p><?php echo education_master_the_excerpt( apply_filters( 'education_master_filter_service_length', 50 ), $post ); ?></p>
 

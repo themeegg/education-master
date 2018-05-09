@@ -150,7 +150,7 @@ if ( ! function_exists( 'education_master_render_featured_slider' ) ) :
 		$featured_slider_enable_caption      = education_master_get_option( 'featured_slider_enable_caption' );
 		$featured_slider_caption_alignment   = education_master_get_option( 'featured_slider_caption_alignment' );
 		$featured_slider_enable_arrow        = education_master_get_option( 'featured_slider_enable_arrow' );
- 		$featured_slider_enable_autoplay     = education_master_get_option( 'featured_slider_enable_autoplay' );
+		$featured_slider_enable_autoplay     = education_master_get_option( 'featured_slider_enable_autoplay' );
 		$featured_slider_enable_overlay      = education_master_get_option( 'featured_slider_enable_overlay' );
 		$featured_slider_transition_duration = education_master_get_option( 'featured_slider_transition_duration' );
 		$featured_slider_transition_delay    = education_master_get_option( 'featured_slider_transition_delay' );
@@ -243,38 +243,38 @@ if ( ! function_exists( 'education_master_render_featured_slider' ) ) :
 					         data-cycle-target="<?php echo esc_attr( $target ); ?>"
 					         data-cycle-buttons="<?php echo esc_attr( $buttons_markup ); ?>">
 
-						<?php if ( ! empty( $slide['url'] ) ) : ?>
-						<a href="<?php echo esc_url( $slide['url'] ); ?>" target="<?php echo esc_attr( $target ); ?>">
-							<?php endif; ?>
-
-							<img src="<?php echo esc_url( $slide['images'][0] ); ?>"
-							     alt="<?php echo esc_attr( $slide['title'] ); ?>"/>
 							<?php if ( ! empty( $slide['url'] ) ) : ?>
-						</a>
-					<?php endif; ?>
+							<a href="<?php echo esc_url( $slide['url'] ); ?>"
+							   target="<?php echo esc_attr( $target ); ?>">
+								<?php endif; ?>
+								<img src="<?php echo esc_url( $slide['images'][0] ); ?>"
+								     alt="<?php echo esc_attr( $slide['title'] ); ?>"/>
+								<?php if ( ! empty( $slide['url'] ) ) : ?>
+							</a>
+						<?php endif; ?>
 
-						<?php
-
-
-						if ( "true" == $featured_slider_enable_caption ) : ?>
 							<?php
 
-							if ( isset( $slide['caption_alignment'] ) && ! empty( $slide['caption_alignment'] ) ) {
-								$caption_alignment_class = 'caption-alignment-' . esc_attr( $slide['caption_alignment'] );
-							} else {
-								$caption_alignment_class = 'caption-alignment-' . esc_attr( $featured_slider_caption_alignment );
-							}
-							?>
-							<div class="cycle-caption <?php echo esc_attr( $caption_alignment_class ); ?>">
-								<div class="caption-wrap">
-									<h3>
-										<a href="<?php echo esc_url( $slide['url'] ); ?>"><?php echo esc_attr( $slide['title'] ); ?></a>
-									</h3>
-									<p><?php echo esc_attr( $slide['excerpt'] ); ?></p>
-									<?php echo wp_kses_post( $buttons_markup ); ?>
-								</div><!-- .cycle-wrap -->
-							</div><!-- .cycle-caption -->
-						<?php endif; ?>
+
+							if ( "true" == $featured_slider_enable_caption ) : ?>
+								<?php
+
+								if ( isset( $slide['caption_alignment'] ) && ! empty( $slide['caption_alignment'] ) ) {
+									$caption_alignment_class = 'caption-alignment-' . esc_attr( $slide['caption_alignment'] );
+								} else {
+									$caption_alignment_class = 'caption-alignment-' . esc_attr( $featured_slider_caption_alignment );
+								}
+								?>
+								<div class="cycle-caption <?php echo esc_attr( $caption_alignment_class ); ?>">
+									<div class="caption-wrap">
+										<h3>
+											<a href="<?php echo esc_url( $slide['url'] ); ?>"><?php echo esc_attr( $slide['title'] ); ?></a>
+										</h3>
+										<p><?php echo esc_attr( $slide['excerpt'] ); ?></p>
+										<?php echo wp_kses_post( $buttons_markup ); ?>
+									</div><!-- .cycle-wrap -->
+								</div><!-- .cycle-caption -->
+							<?php endif; ?>
 
 					</article>
 

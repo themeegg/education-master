@@ -27,7 +27,6 @@ jQuery(document).ready(function ($) {
 	 * Slider script
 	 */
 	$('.slider-posts').each(function () {
-		alert('Yes it is main slider');
 		$(".edm-main-slider").lightSlider({
 			item: 1,
 			auto: true,

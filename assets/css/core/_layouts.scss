@@ -139,17 +139,15 @@ body.fullwidth-layout {
 	}
 }
 
-#masthead {
-	.site-branding {
-		float: left;
-		margin: 20px 0;
-	}
-	.edm-header-banner-area {
-		float: right;
-		.education_master_ads_banner {
-			margin: 0;
-			padding: 0;
-		}
+.site-branding {
+	float: left;
+}
+
+.edm-header-banner-area {
+	float: right;
+	.education_master_ads_banner {
+		margin: 0;
+		padding: 0;
 	}
 }
 

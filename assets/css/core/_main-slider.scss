@@ -76,21 +76,24 @@
 }
 
 #main-slider .cycle-caption {
-	bottom: 30%;
+
 	height: auto;
-	left: 15%;
 	max-width: 85%;
 	padding: 0;
-	position: absolute;
 	text-align: left;
 	width: 100%;
 	z-index: 999;
-}
 
+}
 #main-slider .cycle-caption.caption-alignment-center {
 	text-align: center;
-	left: 5%;
 	max-width: 90%;
+ 	float: none;
+	bottom: 30%;
+	position: absolute;
+	margin: 0 auto;
+	left: 0;
+	right: 0;
 }
 
 #main-slider .cycle-caption.caption-alignment-right {
@@ -195,7 +198,7 @@
 	font-weight: normal;
 	position: absolute;
 	text-align: center;
-	z-index: 999;
+	z-index: 99999;
 	padding: 0 0;
 	transition: all 0.2s ease-in-out 0s;
 	line-height: 100px;
