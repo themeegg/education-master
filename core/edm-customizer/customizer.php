@@ -81,7 +81,7 @@ add_action( 'customize_controls_enqueue_scripts', 'education_master_customize_ba
  *
  * @since 1.0.0
  */
-
+require get_template_directory() . '/core/edm-customizer/parts/edm-important-link-panel.php'; //Important Link panel
 require get_template_directory() . '/core/edm-customizer/parts/edm-general-panel.php';          // General Settings
 require get_template_directory() . '/core/edm-customizer/parts/edm-header-panel.php';            // Header Settings
 require get_template_directory() . '/core/edm-customizer/parts/edm-additional-panel.php';       // Additional Settings

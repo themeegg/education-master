@@ -144,3 +144,21 @@ span.field-label {
 div[id*=education_master_].widget h3 {
 	border-left: 3px solid #e44a3c
 }
+
+#customize-controls #accordion-section-education_master_important_links h3.accordion-section-title {
+	background: #e44a3c;
+	color: #fff;
+}
+
+#customize-controls #accordion-section-education_master_important_links h3.accordion-section-title:after {
+	color: #fff;
+}
+
+#sub-accordion-section-education_master_important_links li.customize-control-education-master-important-links p a {
+	width: 100%;
+	display: inline-block;
+	background: #e44a3c;
+	padding: 10px;
+	color: #ffff;
+
+}

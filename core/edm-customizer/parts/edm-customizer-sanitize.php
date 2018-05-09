@@ -383,3 +383,8 @@ if ( ! function_exists( 'education_master_sanitize_dropdown_pages' ) ) :
 
 endif;
 
+
+// sanitization of links
+function education_master_links_sanitize() {
+	return false;
+}
