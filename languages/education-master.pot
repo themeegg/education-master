@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: themeeggofficial@gmail.com\n"
-"POT-Creation-Date: 2018-05-07 11:57:34+00:00\n"
+"POT-Creation-Date: 2018-05-09 13:35:38+00:00\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -535,6 +535,38 @@ msgstr ""
 
 #: core/edm-customizer/parts/edm-header-panel.php:272
 msgid "Notice Caption"
+msgstr ""
+
+#: core/edm-customizer/parts/edm-important-link-panel.php:24
+msgid "View Pro"
+msgstr ""
+
+#: core/edm-customizer/parts/edm-important-link-panel.php:28
+msgid "Theme Info"
+msgstr ""
+
+#: core/edm-customizer/parts/edm-important-link-panel.php:32
+msgid "Support"
+msgstr ""
+
+#: core/edm-customizer/parts/edm-important-link-panel.php:36
+msgid "Documentation"
+msgstr ""
+
+#: core/edm-customizer/parts/edm-important-link-panel.php:40
+msgid "View Demo"
+msgstr ""
+
+#: core/edm-customizer/parts/edm-important-link-panel.php:44
+msgid "Rate this theme"
+msgstr ""
+
+#: core/edm-customizer/parts/edm-important-link-panel.php:56
+msgid "Education Master Important Links"
+msgstr ""
+
+#: core/edm-customizer/parts/edm-important-link-panel.php:68
+msgid "Important Links"
 msgstr ""
 
 #: core/edm-functions/options.php:90
