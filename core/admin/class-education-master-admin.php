@@ -467,7 +467,7 @@ if (!class_exists('Education_Master_Admin')) :
                         <td><span class="dashicons dashicons-yes"></span></td>
                     </tr>
                     <tr>
-                        <td><h3><?php esc_html_e('Call to action widget', 'educaeducation_masterster'); ?></h3></td>
+                        <td><h3><?php esc_html_e('Call to action widget', 'education-master'); ?></h3></td>
                         <td><span class="dashicons dashicons-no"></span></td>
                         <td><span class="dashicons dashicons-yes"></span></td>
                     </tr>
