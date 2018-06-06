@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: themeeggofficial@gmail.com\n"
-"POT-Creation-Date: 2018-05-09 13:35:38+00:00\n"
+"POT-Creation-Date: 2018-06-06 12:57:55+00:00\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -12,6 +12,23 @@ msgstr ""
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
 "X-Generator: grunt-wp-i18n1.0.1\n"
+
+#: core/admin/class-education-master-admin.php:365
+#: core/admin/class-education-master-admin.php:366
+msgid "6"
+msgstr ""
+
+#: core/admin/class-education-master-admin.php:360
+msgid "7"
+msgstr ""
+
+#: core/admin/class-education-master-admin.php:341
+msgid "15"
+msgstr ""
+
+#: core/admin/class-education-master-admin.php:361
+msgid "16"
+msgstr ""
 
 #: 404.php:21
 msgid "404"
@@ -52,6 +69,331 @@ msgstr ""
 msgid "Comments are closed."
 msgstr ""
 
+#: core/admin/class-education-master-admin.php:39
+#: core/admin/class-education-master-admin.php:130
+msgid "About"
+msgstr ""
+
+#: core/admin/class-education-master-admin.php:82
+msgid "Action failed. Please refresh the page and retry."
+msgstr ""
+
+#: core/admin/class-education-master-admin.php:86
+msgid "Cheatin&#8217; huh?"
+msgstr ""
+
+#: core/admin/class-education-master-admin.php:102
+msgid "Dismiss"
+msgstr ""
+
+#: core/admin/class-education-master-admin.php:105
+#. translators: 1: anchor tag start, 2: anchor tag end
+msgid ""
+"Welcome! Thank you for choosing education master! To fully take advantage "
+"of the best our theme can offer please make sure you visit our %1$swelcome "
+"page%1$s."
+msgstr ""
+
+#: core/admin/class-education-master-admin.php:109
+msgid "Get started with Education Master"
+msgstr ""
+
+#: core/admin/class-education-master-admin.php:147
+#: core/edm-customizer/parts/edm-important-link-panel.php:28
+msgid "Theme Info"
+msgstr ""
+
+#: core/admin/class-education-master-admin.php:151
+#: core/edm-customizer/parts/edm-important-link-panel.php:40
+msgid "View Demo"
+msgstr ""
+
+#: core/admin/class-education-master-admin.php:155
+#: core/edm-customizer/parts/edm-important-link-panel.php:44
+msgid "Rate this theme"
+msgstr ""
+
+#: core/admin/class-education-master-admin.php:158
+msgid "View Pro Version"
+msgstr ""
+
+#: core/admin/class-education-master-admin.php:174
+msgid "Changelog"
+msgstr ""
+
+#: core/admin/class-education-master-admin.php:212
+msgid "Theme Customizer"
+msgstr ""
+
+#: core/admin/class-education-master-admin.php:213
+msgid "All Theme Options are available via Customize screen."
+msgstr ""
+
+#: core/admin/class-education-master-admin.php:215
+msgid "Customize"
+msgstr ""
+
+#: core/admin/class-education-master-admin.php:220
+#: core/admin/class-education-master-admin.php:223
+#: core/edm-customizer/parts/edm-important-link-panel.php:36
+msgid "Documentation"
+msgstr ""
+
+#: core/admin/class-education-master-admin.php:221
+msgid "Please view our documentation page to setup the theme."
+msgstr ""
+
+#: core/admin/class-education-master-admin.php:228
+msgid "Got theme support question?"
+msgstr ""
+
+#: core/admin/class-education-master-admin.php:229
+msgid "Please put it in our dedicated support forum."
+msgstr ""
+
+#: core/admin/class-education-master-admin.php:231
+#: core/admin/class-education-master-admin.php:329
+#: core/edm-customizer/parts/edm-important-link-panel.php:32
+msgid "Support"
+msgstr ""
+
+#: core/admin/class-education-master-admin.php:236
+msgid "Any question about this theme or us?"
+msgstr ""
+
+#: core/admin/class-education-master-admin.php:237
+msgid "Please send it via our sales contact page."
+msgstr ""
+
+#: core/admin/class-education-master-admin.php:239
+msgid "Contact Page"
+msgstr ""
+
+#: core/admin/class-education-master-admin.php:246
+#: core/admin/class-education-master-admin.php:255
+msgid "Translate"
+msgstr ""
+
+#: core/admin/class-education-master-admin.php:250
+msgid "Click below to translate this theme into your own language."
+msgstr ""
+
+#: core/admin/class-education-master-admin.php:267
+msgid "Return to Updates"
+msgstr ""
+
+#: core/admin/class-education-master-admin.php:267
+msgid "Return to Dashboard &rarr; Updates"
+msgstr ""
+
+#: core/admin/class-education-master-admin.php:270
+msgid "Go to Dashboard &rarr; Home"
+msgstr ""
+
+#: core/admin/class-education-master-admin.php:270
+msgid "Go to Dashboard"
+msgstr ""
+
+#: core/admin/class-education-master-admin.php:288
+msgid "View changelog below:"
+msgstr ""
+
+#: core/admin/class-education-master-admin.php:316
+msgid "Upgrade to PRO version for more awesome features."
+msgstr ""
+
+#: core/admin/class-education-master-admin.php:321
+msgid "Features"
+msgstr ""
+
+#: core/admin/class-education-master-admin.php:323
+#: core/edm-customizer/parts/edm-footer-panel.php:138
+#: core/edm-hooks/edm-footer-hooks.php:59
+msgid "Education Master"
+msgstr ""
+
+#: core/admin/class-education-master-admin.php:324
+msgid "Education Master Pro"
+msgstr ""
+
+#: core/admin/class-education-master-admin.php:330
+msgid "Forum"
+msgstr ""
+
+#: core/admin/class-education-master-admin.php:331
+msgid "Forum + Emails/Support Ticket"
+msgstr ""
+
+#: core/admin/class-education-master-admin.php:334
+msgid "Category color options"
+msgstr ""
+
+#: core/admin/class-education-master-admin.php:339
+msgid "Additional color options"
+msgstr ""
+
+#: core/admin/class-education-master-admin.php:344
+msgid "Primary color option"
+msgstr ""
+
+#: core/admin/class-education-master-admin.php:349
+msgid "Font size options"
+msgstr ""
+
+#: core/admin/class-education-master-admin.php:354
+msgid "Google fonts options"
+msgstr ""
+
+#: core/admin/class-education-master-admin.php:356
+msgid "500+"
+msgstr ""
+
+#: core/admin/class-education-master-admin.php:359
+msgid "Custom widgets"
+msgstr ""
+
+#: core/admin/class-education-master-admin.php:364
+msgid "Social icons"
+msgstr ""
+
+#: core/admin/class-education-master-admin.php:369
+msgid "Social sharing"
+msgstr ""
+
+#: core/admin/class-education-master-admin.php:374
+msgid "Site layout option"
+msgstr ""
+
+#: core/admin/class-education-master-admin.php:379
+msgid "Options in breaking news"
+msgstr ""
+
+#: core/admin/class-education-master-admin.php:384
+msgid "Change read more text"
+msgstr ""
+
+#: core/admin/class-education-master-admin.php:389
+msgid "Related posts"
+msgstr ""
+
+#: core/admin/class-education-master-admin.php:394
+msgid "Author biography"
+msgstr ""
+
+#: core/admin/class-education-master-admin.php:399
+msgid "Footer copyright editor"
+msgstr ""
+
+#: core/admin/class-education-master-admin.php:404
+msgid "728x90 Advertisement"
+msgstr ""
+
+#: core/admin/class-education-master-admin.php:409
+msgid "Featured category slider"
+msgstr ""
+
+#: core/admin/class-education-master-admin.php:414
+msgid "Random posts widget"
+msgstr ""
+
+#: core/admin/class-education-master-admin.php:419
+msgid "Tabbed widget"
+msgstr ""
+
+#: core/admin/class-education-master-admin.php:424
+msgid "Videos"
+msgstr ""
+
+#: core/admin/class-education-master-admin.php:430
+msgid "WooCommerce compatible"
+msgstr ""
+
+#: core/admin/class-education-master-admin.php:435
+msgid "Multiple header options"
+msgstr ""
+
+#: core/admin/class-education-master-admin.php:440
+msgid "Readmore flying card"
+msgstr ""
+
+#: core/admin/class-education-master-admin.php:445
+msgid "Weather widget"
+msgstr ""
+
+#: core/admin/class-education-master-admin.php:450
+msgid "Currency converter widget"
+msgstr ""
+
+#: core/admin/class-education-master-admin.php:455
+msgid "Category enable/disable option"
+msgstr ""
+
+#: core/admin/class-education-master-admin.php:460
+msgid "Reading indicator option"
+msgstr ""
+
+#: core/admin/class-education-master-admin.php:465
+msgid "Lightbox support"
+msgstr ""
+
+#: core/admin/class-education-master-admin.php:470
+#: core/edm-widgets/edm-cta.php:26
+msgid "Call to action widget"
+msgstr ""
+
+#: core/admin/class-education-master-admin.php:475
+msgid "Contact us template"
+msgstr ""
+
+#: core/admin/class-education-master-admin.php:485
+#: core/edm-customizer/parts/edm-important-link-panel.php:24
+msgid "View Pro"
+msgstr ""
+
+#: core/admin/class-education-master-admin.php:534
+msgid "This theme recommends following plugins:"
+msgstr ""
+
+#: core/admin/class-education-master-admin.php:537
+#: core/edm-customizer/parts/edm-additional-panel.php:38
+#: core/edm-customizer/parts/edm-header-panel.php:118
+msgid "Social Icons"
+msgstr ""
+
+#: core/admin/class-education-master-admin.php:538
+#: core/admin/class-education-master-admin.php:542
+msgid " by ThemeEgg"
+msgstr ""
+
+#: core/admin/class-education-master-admin.php:541
+msgid "Easy Social Sharing"
+msgstr ""
+
+#: core/admin/class-education-master-admin.php:545
+msgid "Contact Form 7"
+msgstr ""
+
+#: core/admin/class-education-master-admin.php:547
+msgid "WP-PageNavi"
+msgstr ""
+
+#: core/admin/class-education-master-admin.php:549
+msgid "WooCommerce"
+msgstr ""
+
+#: core/admin/class-education-master-admin.php:552
+msgid "Polylang"
+msgstr ""
+
+#: core/admin/class-education-master-admin.php:553
+#: core/admin/class-education-master-admin.php:558
+msgid "Fully Compatible in Pro Version"
+msgstr ""
+
+#: core/admin/class-education-master-admin.php:557
+msgid "WPML"
+msgstr ""
+
 #: core/edm-customizer/parts/customizer-default.php:37
 msgid "Copyright &copy; All rights reserved."
 msgstr ""
@@ -67,11 +409,6 @@ msgstr ""
 
 #: core/edm-customizer/parts/edm-additional-panel.php:25
 msgid "Additional Settings"
-msgstr ""
-
-#: core/edm-customizer/parts/edm-additional-panel.php:38
-#: core/edm-customizer/parts/edm-header-panel.php:118
-msgid "Social Icons"
 msgstr ""
 
 #: core/edm-customizer/parts/edm-additional-panel.php:65
@@ -426,11 +763,6 @@ msgstr ""
 msgid "Bottom Section"
 msgstr ""
 
-#: core/edm-customizer/parts/edm-footer-panel.php:138
-#: core/edm-hooks/edm-footer-hooks.php:59
-msgid "Education Master"
-msgstr ""
-
 #: core/edm-customizer/parts/edm-footer-panel.php:147
 msgid "Copyright Text"
 msgstr ""
@@ -535,30 +867,6 @@ msgstr ""
 
 #: core/edm-customizer/parts/edm-header-panel.php:272
 msgid "Notice Caption"
-msgstr ""
-
-#: core/edm-customizer/parts/edm-important-link-panel.php:24
-msgid "View Pro"
-msgstr ""
-
-#: core/edm-customizer/parts/edm-important-link-panel.php:28
-msgid "Theme Info"
-msgstr ""
-
-#: core/edm-customizer/parts/edm-important-link-panel.php:32
-msgid "Support"
-msgstr ""
-
-#: core/edm-customizer/parts/edm-important-link-panel.php:36
-msgid "Documentation"
-msgstr ""
-
-#: core/edm-customizer/parts/edm-important-link-panel.php:40
-msgid "View Demo"
-msgstr ""
-
-#: core/edm-customizer/parts/edm-important-link-panel.php:44
-msgid "Rate this theme"
 msgstr ""
 
 #: core/edm-customizer/parts/edm-important-link-panel.php:56
@@ -698,10 +1006,6 @@ msgstr ""
 #: core/edm-widgets/edm-carousel.php:50
 #: core/edm-widgets/edm-featured-posts.php:50
 msgid "Block Categories"
-msgstr ""
-
-#: core/edm-widgets/edm-cta.php:26
-msgid "Call to action widget"
 msgstr ""
 
 #: core/edm-widgets/edm-cta.php:28
@@ -1237,15 +1541,15 @@ msgstr ""
 msgid "Return to Required Plugins Installer"
 msgstr ""
 
-#: functions.php:56
+#: functions.php:57
 msgid "Top Menu"
 msgstr ""
 
-#: functions.php:57
+#: functions.php:58
 msgid "Primary Menu"
 msgstr ""
 
-#: functions.php:58
+#: functions.php:59
 msgid "Footer Menu"
 msgstr ""
 
