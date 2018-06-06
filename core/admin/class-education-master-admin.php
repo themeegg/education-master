@@ -173,7 +173,7 @@ if (!class_exists('Education_Master_Admin')) :
                 ), 'themes.php'))); ?>">
                     <?php esc_html_e('Changelog', 'education-master'); ?>
                 </a>
-                
+
             </h2>
             <?php
         }
