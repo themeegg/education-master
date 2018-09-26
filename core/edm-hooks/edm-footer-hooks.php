@@ -16,6 +16,16 @@
 if( ! function_exists( 'education_master_footer_start' ) ) :
 	function education_master_footer_start() {
 		echo '<footer id="colophon" class="site-footer" role="contentinfo">';
+		/**
+ 		* parallax footer
+ 		*
+ 		* @since 1.0.7
+ 		*/
+		$parallax_footer = get_theme_mod('education_master_parallax_footer');
+		if($parallax_footer) { ?>
+		<div class="parallax" style='background-image: url("<?php echo esc_url($parallax_footer); ?>"); '>
+			<div class="parallax-content"><?php  
+	} 
 	}
 endif;
 
@@ -28,9 +38,12 @@ endif;
 if( ! function_exists( 'education_master_footer_widget_section' ) ) :
 	function education_master_footer_widget_section() {
 		get_sidebar( 'footer' );
+		$parallax_footer = get_theme_mod('education_master_parallax_footer');
+		if($parallax_footer) { ?>
+			?>  </div> </div> <?php
+		}
 	}
 endif;
-
 /*-----------------------------------------------------------------------------------------------------------------------*/
 /**
  * Bottom footer start

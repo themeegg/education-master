@@ -111,6 +111,10 @@ function education_master_body_classes( $classes ) {
 		}
 	}
 
+	$enable_preloader= get_theme_mod('education_master_preloader');
+    if($enable_preloader){
+        $classes[] = "body_preloader";
+    }
 	return $classes;
 }
 

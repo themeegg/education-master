@@ -12,12 +12,9 @@
 ?>
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-	
-
 	<div class="edm-article-thumb">
 		<?php the_post_thumbnail( 'full' ); ?>
 	</div><!-- .edm-article-thumb -->
-
 	<header class="entry-header">
 		<?php 
 			the_title( '<h1 class="entry-title">', '</h1>' );

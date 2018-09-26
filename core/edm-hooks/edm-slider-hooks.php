@@ -310,7 +310,6 @@ if ( ! function_exists( 'education_master_check_slider_status' ) ) :
 		if ( is_object( $queried_object ) && 'WP_Post' === get_class( $queried_object ) ) {
 			$page_id = get_queried_object_id();
 		}
-
 		// Front page displays in Reading Settings.
 		$page_on_front  = absint( get_option( 'page_on_front' ) );
 		$page_for_posts = absint( get_option( 'page_for_posts' ) );

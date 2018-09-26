@@ -139,4 +139,13 @@ jQuery(document).ready(function ($) {
 		}, 600);
 		return false;
 	});
+	/**
+    * Prelaoder for website
+    * @package Theme Egg
+	* @subpackage Miteri
+	* @since 1.1.0
+	*/
+    var preloader = $('.spinner-wrapper');
+    preloader.fadeOut();
+    $('body').removeClass('body_preloader');
 });

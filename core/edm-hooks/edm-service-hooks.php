@@ -27,8 +27,11 @@ if ( ! function_exists( 'education_master_service_section' ) ) :
 					if ( ! empty( $page_id ) ) {
 
 						$post = get_post( $page_id );
+						?><?php
+						$featured_slider_status = education_master_get_option( 'featured_slider_status' ); 
+
 						?>
-						<div class="edm-single-service edm-service-col-<?php echo esc_attr( $services_number ); ?>">
+						<div class="edm-single-service edm-service-col-<?php echo esc_attr( $services_number ); ?>" style="<?php if($featured_slider_status == 'home-page'){echo '';}else{echo 'margin-top:64px;';} ?>">
 							<div class="edm-service-wrapper"
 							     style="background-color:<?php echo esc_attr( $service_background ); ?>">
 								<div class="icon_alignment">

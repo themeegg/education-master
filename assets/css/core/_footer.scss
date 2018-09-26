@@ -1,10 +1,6 @@
 footer#colophon{
-
-
     .widget{
-
-    &.education_master_carousel{
-
+        &.education_master_carousel{
         h3.edm-post-title a, time, .author, .author a{
             color:$primary_color;
         }
@@ -27,6 +23,26 @@ footer#colophon{
         font-size:12px;
     }
 
-}
+    }
+    .parallax {
+        height: 100%; 
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        margin-left:-55px;
+        margin-right:-54px;
+        max-width: auto;
+        @media(max-width:720px){
+            margin-left:0px;
+            margin-right:0px;
+        }
+    }
+    .parallax-content { 
+        width:100%;
+        margin:0 auto;
+        color:#FFF;
+        padding-top:5px; 
+    } 
     
 }

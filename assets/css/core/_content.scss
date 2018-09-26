@@ -327,3 +327,26 @@ body.home.page-template-template-home {
 #content {
 	margin-top: 30px;
 }
+
+body.body_preloader{
+    overflow: hidden;
+    height: 100vh;
+}
+.spinner-wrapper {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: white;
+    z-index: 999999;
+    overflow: hidden;
+}
+.spinner {
+     text-align:center;
+     margin-top: 8em;
+     margin-left:auto;
+     margin-right:auto;
+ 
+
+}

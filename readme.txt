@@ -57,8 +57,13 @@ Other Images:
 2. You wll find different options in customizer
 
 == Changelog ==
+= 1.0.7 - 2018/9/26 = 
+    * website preloader added
+    * parallax footer added
+    * left sidebar disappearing issue fixed
+    * Theme design change issue on disabling featured slider fixed
 = 1.0.6 - 2018/06/06 =
-    * Theme about page added
+    * Theme about us page added
 = 1.0.5 - 2018/05/09 =
     * important link added
     * navigation responsiveness issue fixed

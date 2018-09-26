@@ -122,6 +122,42 @@ function education_master_general_settings_register( $wp_customize ) {
         )
     );
 /*------------------------------------------------------------------------------------------*/
+ /**
+     * Preloader for website
+     *
+     * @since 1.0.7
+     */
+    $wp_customize->add_section(
+        'education_master_wesbsite_preloader_section',
+        array(
+            'title'         => __( 'Preloader for Website', 'education-master' ),
+            'description'   => __( 'Choose a Image For Website Preloader', 'education-master' ),
+            'priority'      => 55,
+            'panel'         => 'education_master_general_settings_panel',
+        )
+    );
+
+    $wp_customize->add_setting(
+        'education_master_preloader',
+        array( 
+            'default'           => '',
+            'sanitize_callback' => 'esc_url',
+        )
+    );
+    
+    $wp_customize->add_control(
+           new WP_Customize_Image_Control(
+               $wp_customize,
+               'education_master_preloader',
+               array(
+                   'label'      => __('Upload preloader image', 'miteri-pro' ),
+                   'section'    => 'education_master_wesbsite_preloader_section',
+                   'settings'   => 'education_master_preloader',
+                )
+            )    
+    );
+/*------------------------------------------------------------------------------------------*/
+
     /**
      * Title and tagline checkbox
      *

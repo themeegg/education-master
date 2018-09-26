@@ -21,8 +21,18 @@
 	<?php wp_head(); ?>
 </head>
 
-<body <?php body_class(); ?>>
-
+<body <?php body_class(); ?>><?php
+$preloader = get_theme_mod('education_master_preloader');
+if($preloader){ ?>
+	<div class = "body_preloader">
+		<div id="spinnerC" class="spinner-wrapper">
+			<div class="spinner" style="">
+				<img class="img-responsive" src="<?php echo esc_url($preloader); ?>">
+			</div>
+		</div>
+	</div><?php 
+}
+?>
 <?php
 /**
  * education_master_before_page hook

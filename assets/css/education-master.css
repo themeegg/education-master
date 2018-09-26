@@ -1478,6 +1478,26 @@ body.home.page-template-template-home .site-header.default .site-branding {
 #content {
   margin-top: 30px; }
 
+body.body_preloader {
+  overflow: hidden;
+  height: 100vh; }
+
+.spinner-wrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: white;
+  z-index: 999999;
+  overflow: hidden; }
+
+.spinner {
+  text-align: center;
+  margin-top: 8em;
+  margin-left: auto;
+  margin-right: auto; }
+
 .widget_search .search-field {
   width: 75%;
   float: left;
@@ -3887,6 +3907,26 @@ footer#colophon .widget.education_master_featured_posts .edm-single-post-wrap {
 
 footer#colophon .widget .entry-date, footer#colophon .widget .author {
   font-size: 12px; }
+
+footer#colophon .parallax {
+  height: 100%;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-left: -55px;
+  margin-right: -54px;
+  max-width: auto; }
+  @media (max-width: 720px) {
+    footer#colophon .parallax {
+      margin-left: 0px;
+      margin-right: 0px; } }
+
+footer#colophon .parallax-content {
+  width: 100%;
+  margin: 0 auto;
+  color: #FFF;
+  padding-top: 5px; }
 
 @media screen and (max-device-width: 767px) {
   /* some CSS here */

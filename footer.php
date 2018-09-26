@@ -10,18 +10,19 @@
  * @subpackage Education Master
  * @since 1.0.0
  */
-
 ?>
 
 		</div><!-- .edm-container -->
 	</div><!-- #content -->
 
 	<?php
-
+	
 	    do_action( 'education_master_footer' );
-	?>
+	/*if($parallax_footer){ ?>
+	</div></div>
+	}
+	*/?>
 </div><!-- #page -->
-
 <?php
 	/**
      * education_master_after_page hook

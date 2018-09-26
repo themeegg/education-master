@@ -17,7 +17,7 @@ $wp_customize->add_panel( 'theme_slider_panel',
 );
 
 // Slider Type Section.
-$wp_customize->add_section( 'section_theme_slider_type',
+$wp_customize->add_section('section_theme_slider_type',
 	array(
 		'title'      => __( 'Slider Type', 'education-master' ),
 		'priority'   => 100,
