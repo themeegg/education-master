@@ -156,6 +156,11 @@ function education_master_footer_settings_register( $wp_customize ) {
                 'render_callback' => 'education_master_customize_partial_copyright',
             )
     );
+     /**
+     * Parallax footer
+     *
+     * @since 1.0.7
+     */
 
     $wp_customize->add_setting(
         'education_master_parallax_footer',
@@ -169,7 +174,7 @@ function education_master_footer_settings_register( $wp_customize ) {
             $wp_customize,
             'education_master_parallax_footer',
             array(
-                'label'      => __('Upload Parallax image', 'miteri-pro' ),
+                'label'      => __('Upload Parallax image', 'education-master' ),
                 'section'    => 'education_master_footer_bottom_section',
                 'settings'   => 'education_master_parallax_footer',
             )

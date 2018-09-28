@@ -142,8 +142,8 @@ jQuery(document).ready(function ($) {
 	/**
     * Prelaoder for website
     * @package Theme Egg
-	* @subpackage Miteri
-	* @since 1.1.0
+	* @subpackage Education Master
+	* @since 1.0.7
 	*/
     var preloader = $('.spinner-wrapper');
     preloader.fadeOut();

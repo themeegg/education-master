@@ -23,9 +23,9 @@ if( ! function_exists( 'education_master_footer_start' ) ) :
  		*/
 		$parallax_footer = get_theme_mod('education_master_parallax_footer');
 		if($parallax_footer) { ?>
-		<div class="parallax" style='background-image: url("<?php echo esc_url($parallax_footer); ?>"); '>
+			<div class="parallax" style='background-image: url("<?php echo esc_url($parallax_footer); ?>"); '>
 			<div class="parallax-content"><?php  
-	} 
+		} 
 	}
 endif;
 

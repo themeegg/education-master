@@ -22,6 +22,11 @@
 </head>
 
 <body <?php body_class(); ?>><?php
+ /**
+     * Website Preloader
+     *
+     * @since 1.0.7
+     */
 $preloader = get_theme_mod('education_master_preloader');
 if($preloader){ ?>
 	<div class = "body_preloader">

@@ -150,7 +150,7 @@ function education_master_general_settings_register( $wp_customize ) {
                $wp_customize,
                'education_master_preloader',
                array(
-                   'label'      => __('Upload preloader image', 'miteri-pro' ),
+                   'label'      => __('Upload preloader image', 'education-master' ),
                    'section'    => 'education_master_wesbsite_preloader_section',
                    'settings'   => 'education_master_preloader',
                 )

@@ -2,8 +2,8 @@
 
 Contributors:       ThemeEgg
 Requires at least:  WordPress 4.0
-Tested up to:       WordPress 4.9.6
-Version:            1.0.6
+Tested up to:       WordPress 4.9.8
+Version:            1.0.7
 License:            GPLv3 or later
 License URI:        http://www.gnu.org/licenses/gpl-3.0.html
 Tags:               one-column, two-columns, three-columns, left-sidebar, right-sidebar, custom-background, custom-menu, featured-images, full-width-template, translation-ready, theme-options, threaded-comments, footer-widgets, custom-logo, education
@@ -60,7 +60,7 @@ Other Images:
 = 1.0.7 - 2018/9/26 = 
     * website preloader added
     * parallax footer added
-    * left sidebar disappearing issue fixed
+    * left sidebar issue fixed
     * Theme design change issue on disabling featured slider fixed
 = 1.0.6 - 2018/06/06 =
     * Theme about us page added
