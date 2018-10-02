@@ -57,7 +57,7 @@ Other Images:
 2. You wll find different options in customizer
 
 == Changelog ==
-= 1.0.7 - 2018/9/26 = 
+= 1.0.7 - 2018/10/02 =
     * website preloader added
     * parallax footer added
     * left sidebar issue fixed
