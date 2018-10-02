@@ -60,8 +60,8 @@ Other Images:
 = 1.0.7 - 2018/10/02 =
     * website preloader added
     * parallax footer added
-    * left sidebar issue fixed
     * Theme design change issue on disabling featured slider fixed
+	* other minor design issue fixed
 = 1.0.6 - 2018/06/06 =
     * Theme about us page added
 = 1.0.5 - 2018/05/09 =
