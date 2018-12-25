@@ -58,7 +58,8 @@ Other Images:
 
 == Changelog ==
 = 1.0.8 - 2018/12/24 =
-    * Added - Related post option (category/tags)
+    * Related post option (category/tags) added
+    * Minor design issue fixed
 = 1.0.7 - 2018/10/02 =
     * website preloader added
     * parallax footer added
