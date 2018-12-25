@@ -2,8 +2,8 @@
 
 Contributors:       ThemeEgg
 Requires at least:  WordPress 4.0
-Tested up to:       WordPress 4.9.8
-Version:            1.0.7
+Tested up to:       WordPress 5.0.2
+Version:            1.0.8
 License:            GPLv3 or later
 License URI:        http://www.gnu.org/licenses/gpl-3.0.html
 Tags:               one-column, two-columns, three-columns, left-sidebar, right-sidebar, custom-background, custom-menu, featured-images, full-width-template, translation-ready, theme-options, threaded-comments, footer-widgets, custom-logo, education
@@ -57,6 +57,8 @@ Other Images:
 2. You wll find different options in customizer
 
 == Changelog ==
+= 1.0.8 - 2018/12/24 =
+    * Added - Related post option (category/tags)
 = 1.0.7 - 2018/10/02 =
     * website preloader added
     * parallax footer added

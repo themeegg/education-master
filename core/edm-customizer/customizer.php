@@ -75,6 +75,17 @@ function education_master_customize_backend_scripts() {
 
 add_action( 'customize_controls_enqueue_scripts', 'education_master_customize_backend_scripts', 10 );
 
+/**
+ * Customizer Callback functions
+ */
+function education_master_related_posts_option_callback( $control ) {
+	if ( $control->manager->get_setting( 'education_master_related_posts_option' )->value() != 'disable' ) {
+		return true;
+	} else {
+		return false;
+	}
+}
+
 /*-----------------------------------------------------------------------------------------------------------------------*/
 /**
  * Load required files for customizer section

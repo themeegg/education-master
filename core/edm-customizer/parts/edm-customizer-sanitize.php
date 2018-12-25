@@ -38,6 +38,19 @@ function education_master_sanitize_repeater( $input ) {
 	return $input;
 }
 
+//Related posts type
+function education_master_sanitize_related_type( $input ) {
+    $valid_keys = array(
+        'category' => __( 'by Category', 'education-master' ),
+        'tag'      => __( 'by Tags', 'education-master' )
+    );
+    if ( array_key_exists( $input, $valid_keys ) ) {
+        return $input;
+    } else {
+        return '';
+    }
+}
+
 /**
  * Sanitize site layout
  *

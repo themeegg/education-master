@@ -40,6 +40,7 @@ if( ! function_exists( 'education_master_related_posts_section' ) ) :
         } else {
             $post_id = $post->ID;
         }
+        $education_master_related_post_type = get_theme_mod( 'education_master_related_post_type', 'category' );
         $categories = get_the_category( $post_id );
         if ( $categories ) {
             $category_ids = array();
@@ -59,6 +60,26 @@ if( ! function_exists( 'education_master_related_posts_section' ) ) :
                 'category__in'				=> $category_ids,
 				'posts_per_page' 		   	=> $education_master_post_count
 			);
+
+		if ( $education_master_related_post_type == 'tag' ) {
+			$tags = wp_get_post_tags( $post_id );
+			if ( $tags ) {
+				$tag_ids = array();
+				foreach ( $tags as $tag_ed ) {
+					$tag_ids[] = $tag_ed->term_id;
+				}
+				$related_args['tag__in'] = $tag_ids;
+			}
+		} else {
+			$categories = get_the_category( $post_id );
+			if ( $categories ) {
+				$category_ids = array();
+				foreach ( $categories as $category_ed ) {
+					$category_ids[] = $category_ed->term_id;
+				}
+				$related_args['category__in'] = $category_ids;
+			}
+		}
 		$related_query = new WP_Query( $related_args );
 		if( $related_query->have_posts() ) {
 			echo '<div class="edm-related-posts-wrap edm-clearfix">';

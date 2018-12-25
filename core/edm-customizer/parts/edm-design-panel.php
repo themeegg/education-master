@@ -265,6 +265,7 @@ function education_master_design_settings_register( $wp_customize ) {
         )
     );
 
+   
     /**
      * Switch option for Related posts
      *
@@ -322,5 +323,31 @@ function education_master_design_settings_register( $wp_customize ) {
                 'selector' => 'h2.edm-related-title',
                 'render_callback' => 'education_master_customize_partial_related_title',
             )
+    );
+
+      /**
+     * Related post type (Category/Tags)
+     *
+     * @since 1.0.8
+     */
+    $wp_customize->add_setting(
+        'education_master_related_post_type', array(
+            'default'           => 'category',
+            'sanitize_callback' => 'education_master_sanitize_related_type',
+        )
+    );
+    $wp_customize->add_control(
+        'education_master_related_post_type', array(
+            'type'            => 'radio',
+            'label'           => esc_html__( 'Types of Related Post', 'education-master' ),
+            'description'     => esc_html__( 'Option to display related post from category/tags.', 'education-master' ),
+            'section'         => 'education_master_post_settings_section',
+            'choices'         => array(
+                'category' => esc_html__( 'by Category', 'education-master' ),
+                'tag'      => esc_html__( 'by Tags', 'education-master' )
+            ),
+            'active_callback' => 'education_master_related_posts_option_callback',
+            'priority'        => 15
+        )
     );
 }
