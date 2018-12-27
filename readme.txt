@@ -57,7 +57,7 @@ Other Images:
 2. You wll find different options in customizer
 
 == Changelog ==
-= 1.0.8 - 2018/12/24 =
+= 1.0.8 - 2018/12/27 =
     * Related post option (category/tags) added
     * Minor design issue fixed
 = 1.0.7 - 2018/10/02 =
